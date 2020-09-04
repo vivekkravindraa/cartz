@@ -1,0 +1,860 @@
+@media (min-width: 0px) and (max-width: 991px) {
+    .productDescriptionContent {
+        display: flex;
+    }
+
+    .productDescriptionShareSimilarProducts,
+    .productDescriptionShare,
+    .productDescriptionSimilarProducts {
+        display: flex;
+    }
+
+    .productDescriptionSimilarProducts > img:nth-child(2) {
+        position: relative;
+        left: -15px;
+    }
+
+    .productDescriptionShare > p,
+    .productDescriptionSimilarProducts > p {
+        white-space: nowrap;
+        text-align: left;
+        font-weight: 500;
+        font-size: 12px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 1.4px;
+        color: #00243E;
+        opacity: 1;
+    }
+    
+    .productData {
+        margin: 0 10px;
+        border-bottom: 1px solid #e0e0e0;
+    }
+    
+    .productDescriptionName {
+        text-align: left;
+        font-weight: 600;
+        font-size: 15px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 1.4px;
+        color: #00243E;
+        opacity: 1;
+    }
+    
+    .productDescriptionTitle {
+        text-align: left;
+        font-weight: 500;
+        font-size: 12px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 0px;
+        color: #00243E;
+        opacity: 1;
+    }
+    
+    .productDescriptionPrices {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .productDescriptionPrice {
+        text-align: left;
+        font-weight: 600;
+        font-size: 14px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 0px;
+        color: #00243E;
+        opacity: 1;
+        margin-right: 10px;
+    }
+    
+    .productDescriptionMarketPrice {
+        text-align: left;
+        font-weight: 600;
+        font-size: 12px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 0px;
+        color: #00243E;
+        opacity: 0.48;
+        margin-right: 10px;
+        text-decoration: line-through;
+    }
+    
+    .productDescriptionSavingPrice {
+        display: flex;
+        justify-content: flex-start;
+        top: 5px;
+        left: 5px;
+        background: #FE0162;
+        padding: 2px 10px 2px 2px;
+        clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+    }
+    
+    .productDescriptionSavingPrice > p {
+        text-align: left;
+        font-weight: 600;
+        font-size: 10px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1;
+        margin: 0;
+    }
+
+    .productDescriptionHighlights {
+        position: relative;
+        margin: 0 10px;
+    }
+
+    .productDescriptionHighlights > p:last-child {
+        text-align: left;
+        font-weight: 600;
+        font-size: 12px;
+        font-weight: Roboto, sans-serif;
+        letter-spacing: 0px;
+        color: #FE0174;
+        text-transform: capitalize;
+        opacity: 1;
+    }
+
+    .productDescriptionHighlights > p:first-child {
+        text-align: left;
+        font-weight: 600;
+        font-size: 14px;
+        font-weight: Roboto, sans-serif;
+        letter-spacing: 0px;
+        color: #00243E;
+        text-transform: capitalize;
+        opacity: 1;
+    }
+    
+    .productDescriptionHighlights > li {
+        text-align: left;
+        font-weight: 500;
+        font-size: 12px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 0px;
+        color: #00243E;
+        text-transform: capitalize;
+        opacity: 1;
+        margin: 0 0 10px 0;
+    }
+    
+    .productDescriptionViews {
+        display: none;
+    }
+    
+    .productDescriptionCartButtons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        margin-left: -140px;
+    }
+    
+    .productDescriptionAddToCart {
+        display: flex;
+        align-items: center;
+        border: none;
+        outline: none;
+        background: #7142AD;
+        border-radius: 36px;
+        text-align: left;
+        font-weight: 600;
+        font-size: 12px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 1px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        opacity: 1;
+        padding: 10px 10px;
+        margin: 10px 20px 10px 0;
+        white-space: nowrap;
+    }
+    
+    .productDescriptionAddToCart > img {
+        margin-right: 5px
+    }
+    
+    .productDescriptionWishList {
+        display: flex;
+        align-items: center;
+        background: #FE0174;
+        border: none;
+        outline: none;
+        border-radius: 36px;
+        text-align: left;
+        font-weight: 600;
+        font-size: 12px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 1px;
+        color: #ffffff;
+        text-transform: uppercase;
+        opacity: 1;
+        padding: 10px 25px;
+        margin: 10px 0;
+    }
+    
+    .productDescriptionWishList > img {
+        margin-right: 5px;
+    }
+
+    .productDescriptionSelectAddress {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    .productDescriptionSelectAddress > p {
+        text-align: left;
+        font-weight: 600;
+        font-size: 14px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 0px;
+        color: #00243E;
+        text-transform: capitalize;
+        opacity: 1;
+        margin: 0 0 10px 5px;
+    }
+    
+    .productDescriptionAddress > p {
+        text-align: left;
+        font-weight: 400;
+        font-size: 12px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 0px;
+        color: #00243E;
+        text-transform: capitalize;
+        opacity: 1;
+        margin: 0 0 10px 0;
+    }
+    
+    .productDescriptionPincode {
+        display: flex;
+        padding: 10px 0;
+    }
+    
+    #productDescriptionPinInput {
+        width: 300px;
+    }
+    
+    #productDescriptionPinInput {
+        border: none;
+        outline: none !important;
+        min-width: 400px;
+        height: 31px;
+        background: #F6F6F6 0% 0% no-repeat padding-box;
+        opacity: 1;
+    }
+    
+    #productDescriptionPinInput::placeholder {
+        text-align: left;
+        font-weight: 500;
+        font-size: 12px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 0.9px;
+        color: #00243E;
+        text-transform: capitalize;
+        opacity: 1;
+    }
+    
+    .productDescriptionPincode > button {
+        border: none;
+        background: #F6F6F6 0% 0% no-repeat padding-box;
+        text-align: left;
+        font-weight: 600;
+        font-size: 12px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 0.9px;
+        color: #FE0162;
+        opacity: 1;
+    }
+
+    .productDescriptionBankOffers {
+        background-color: #f4f7fe;
+        padding: 0 10px;
+    }
+    
+    .productDescriptionOffers {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .productDescriptionOffers > button {
+        border: none;
+        outline: none;
+        background-color: #f4f7fe;
+        text-align: left;
+        font-weight: 600;
+        font-size: 12px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 0px;
+        color: #00243E;
+        text-transform: capitalize;
+        opacity: 1;
+        margin: 0 10px 10px 0;
+        padding: 15px 40px 10px 0px;
+        border-bottom: 2px solid #e0e0e0;
+    }
+    
+    .productDescriptionBankInfo {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        overflow-x: auto;
+    }
+    
+    .productDescriptionBankImage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        border: 1px solid #e0e0e0;
+    }
+    
+    .productDescriptionBankDetails {
+        margin-left: 10px;
+    }
+    
+    .productDescriptionBankDetails > p:first-child {
+        text-align: left;
+        font-weight: 600;
+        font-size: 14px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 0px;
+        color: #00243E;
+        text-transform: capitalize;
+        opacity: 1;
+        margin: 0;
+    }
+    
+    .productDescriptionBankDetails > p {
+        text-align: left;
+        font-weight: 500;
+        font-size: 12px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 0px;
+        color: #00243E;
+        opacity: 1;
+    }
+
+    .productDescriptionBankDetails > p:last-child {
+        color: #FE0174;
+    }
+    
+    .productDescriptionWarranty {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        grid-auto-flow: column;
+        padding: 10px;
+        overflow-x: auto;
+        border-top: 1px solid #e0e0e0;
+        border-bottom: 1px solid #e0e0e0;
+    }
+    
+    .productDescriptionWarrantyInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .productDescriptionWarrantyInfo > p {
+        text-align: center;
+        font-weight: 600;
+        font-size: 12px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 0px;
+        color: #00243E;
+        opacity: 1;
+    }
+
+    .productDescriptionDeliveryDetails {
+        display: flex;
+        flex-direction: column;
+        margin: 0 10px;
+    }
+
+    .productDescriptionDeliveryDetails > p:first-child {
+        text-align: left;
+        font-weight: 600;
+        font-size: 14px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 0px;
+        color: #00243E;
+        text-transform: capitalize;
+        opacity: 1;
+    }
+    
+    .productDescriptionDetails > p {
+        text-align: left;
+        font-weight: 600;
+        font-size: 14px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 0px;
+        color: #00243E;
+        text-transform: capitalize;
+        opacity: 1;
+    }
+    
+    .productDescriptionFeatures > p:first-child {
+        text-align: left;
+        font-weight: 600;
+        font-size: 12px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 4.8px;
+        color: #00243E;
+        text-transform: uppercase;
+        opacity: 1;
+    }
+    
+    .productDescriptionFeatures > p {
+        text-align: left;
+        font-weight: 500;
+        font-size: 12px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 0px;
+        color: #00243E;
+        opacity: 1;
+        margin: 0 0 10px 0;
+    }
+    
+    .productDescriptionBuyNow {
+        width: -webkit-fill-available;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        outline: none;
+        background: #F23F2D;
+        color: #ffffff;
+        border-radius: 7px;
+        text-align: left;
+        font-weight: 600;
+        font-size: 12px;
+        font-weight: Roboto, sans-serif;
+        letter-spacing: 1.1px;
+        text-transform: uppercase;
+        opacity: 1;
+        padding: 15px 15px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 4096px) {
+    .productDescriptionContent {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 50px 20px 200px 20px;
+    }
+    
+    .productDescriptionImages {
+        display: grid;
+        grid-template-columns: repeat(2, 3fr);
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+    
+    .productDescriptionInfo {
+        padding: 0 100px 0 50px;
+    }
+    
+    .productData {
+        border-bottom: 1px solid #e0e0e0;
+    }
+    
+    .productDescriptionName {
+        text-align: left;
+        font-weight: 600;
+        font-size: 15px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 1.4px;
+        color: #00243E;
+        opacity: 1;
+    }
+    
+    .productDescriptionTitle {
+        text-align: left;
+        font-weight: 500;
+        font-size: 12px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 0px;
+        color: #00243E;
+        opacity: 1;
+    }
+    
+    .productDescriptionPrices {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .productDescriptionPrice {
+        text-align: left;
+        font-weight: 600;
+        font-size: 14px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 0px;
+        color: #00243E;
+        opacity: 1;
+        margin-right: 10px;
+    }
+    
+    .productDescriptionMarketPrice {
+        text-align: left;
+        font-weight: 600;
+        font-size: 12px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 0px;
+        color: #00243E;
+        opacity: 0.48;
+        margin-right: 10px;
+        text-decoration: line-through;
+    }
+    
+    .productDescriptionSavingPrice {
+        display: flex;
+        justify-content: flex-start;
+        top: 5px;
+        left: 5px;
+        background: #FE0162;
+        padding: 2px 10px 2px 2px;
+        clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+    }
+    
+    .productDescriptionSavingPrice > p {
+        text-align: left;
+        font-weight: 600;
+        font-size: 10px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1;
+        margin: 0;
+    }
+
+    .productDescriptionHighlights {
+        border-bottom: 1px solid #e0e0e0;
+    }
+    
+    .productDescriptionHighlights > p:first-child {
+        text-align: left;
+        font-weight: 600;
+        font-size: 14px;
+        font-weight: Roboto, sans-serif;
+        letter-spacing: 0px;
+        color: #00243E;
+        text-transform: capitalize;
+        opacity: 1;
+    }
+    
+    .productDescriptionHighlights > li {
+        text-align: left;
+        font-weight: 500;
+        font-size: 12px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 0px;
+        color: #00243E;
+        text-transform: capitalize;
+        opacity: 1;
+        margin: 0 0 10px 0;
+    }
+    
+    .productDescriptionViews {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 10px 0;
+    }
+    
+    .productDescriptionViews > p {
+        text-align: left;
+        font-weight: 600;
+        font-size: 14px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 0.9px;
+        color: #F23F2D;
+        text-transform: uppercase;
+        opacity: 1;
+        margin: 0 50px 0 0;
+    }
+    
+    .productDescriptionCartButtons {
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+    }
+    
+    .productDescriptionAddToCart {
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        border: none;
+        outline: none;
+        background: #F23F2D;
+        border-radius: 36px;
+        text-align: left;
+        font-weight: 600;
+        font-size: 12px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 1px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        opacity: 1;
+        padding: 10px 50px;
+        margin: 10px 20px 10px 0;
+    }
+    
+    .productDescriptionAddToCart > img {
+        margin-right: 5px
+    }
+    
+    .productDescriptionWishList {
+        display: flex;
+        align-items: center;
+        background: #ffffff;
+        border: 1px solid #9F9F9F;
+        outline: none;
+        border-radius: 36px;
+        text-align: left;
+        font-weight: 600;
+        font-size: 12px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 1px;
+        color: #000000;
+        text-transform: uppercase;
+        opacity: 1;
+        padding: 10px 25px;
+        margin: 10px 0;
+    }
+    
+    .productDescriptionWishList > img {
+        margin-right: 5px;
+    }
+    
+    .productDescriptionSelectAddress {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 10px;
+    }
+    
+    .productDescriptionSelectAddress > p {
+        text-align: left;
+        font-weight: 600;
+        font-size: 14px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 0px;
+        color: #00243E;
+        text-transform: capitalize;
+        opacity: 1;
+        margin: 0 0 10px 5px;
+    }
+    
+    .productDescriptionAddress > p {
+        text-align: left;
+        font-weight: 400;
+        font-size: 12px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 0px;
+        color: #00243E;
+        text-transform: capitalize;
+        opacity: 1;
+        margin: 0 0 10px 0;
+    }
+    
+    .productDescriptionPincode {
+        display: flex;
+        padding: 10px 0;
+    }
+    
+    #productDescriptionPinInput {
+        width: 300px;
+    }
+    
+    #productDescriptionPinInput {
+        border: none;
+        outline: none !important;
+        min-width: 400px;
+        height: 31px;
+        background: #F6F6F6 0% 0% no-repeat padding-box;
+        opacity: 1;
+    }
+    
+    #productDescriptionPinInput::placeholder {
+        text-align: left;
+        font-weight: 500;
+        font-size: 12px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 0.9px;
+        color: #00243E;
+        text-transform: capitalize;
+        opacity: 1;
+    }
+    
+    .productDescriptionPincode > button {
+        border: none;
+        background: #F6F6F6 0% 0% no-repeat padding-box;
+        text-align: left;
+        font-weight: 600;
+        font-size: 12px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 0.9px;
+        color: #FE0162;
+        opacity: 1;
+    }
+
+    .productDescriptionWarranty {
+        border-bottom: 1px solid #e0e0e0;
+    }
+    
+    .productDescriptionOffers {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .productDescriptionOffers > button {
+        border: none;
+        outline: none;
+        background: #ffffff;
+        text-align: left;
+        font-weight: 600;
+        font-size: 12px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 0px;
+        color: #00243E;
+        text-transform: capitalize;
+        opacity: 1;
+        margin: 0 10px 10px 0;
+        padding: 15px 40px 10px 0px;
+        border-bottom: 2px solid #e0e0e0;
+    }
+    
+    .productDescriptionBankInfo {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .productDescriptionBankImage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        border: 1px solid #e0e0e0;
+    }
+    
+    .productDescriptionBankDetails {
+        margin-left: 10px;;
+    }
+    
+    .productDescriptionBankDetails > p:first-child {
+        text-align: left;
+        font-weight: 600;
+        font-size: 14px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 0px;
+        color: #00243E;
+        text-transform: capitalize;
+        opacity: 1;
+        margin: 0;
+    }
+    
+    .productDescriptionBankDetails > p {
+        text-align: left;
+        font-weight: 500;
+        font-size: 12px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 0px;
+        color: #00243E;
+        opacity: 1;
+    }
+    
+    .productDescriptionWarranty {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 0;
+    }
+    
+    .productDescriptionWarrantyInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .productDescriptionWarrantyInfo > p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+        font-size: 12px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 0px;
+        color: #00243E;
+        opacity: 1;
+    }
+    
+    .productDescriptionDetails > p {
+        text-align: left;
+        font-weight: 600;
+        font-size: 14px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 0px;
+        color: #00243E;
+        text-transform: capitalize;
+        opacity: 1;
+    }
+    
+    .productDescriptionFeatures > p:first-child {
+        text-align: left;
+        font-weight: 600;
+        font-size: 12px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 4.8px;
+        color: #00243E;
+        text-transform: uppercase;
+        opacity: 1;
+    }
+    
+    .productDescriptionFeatures > p {
+        text-align: left;
+        font-weight: 500;
+        font-size: 12px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 0px;
+        color: #00243E;
+        opacity: 1;
+        margin: 0 0 10px 0;
+    }
+    
+    .productDescriptionBuyNow {
+        width: -webkit-fill-available;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        outline: none;
+        background: #F23F2D;
+        color: #ffffff;
+        border-radius: 7px;
+        text-align: left;
+        font-weight: 600;
+        font-size: 12px;
+        font-weight: Roboto, sans-serif;
+        letter-spacing: 1.1px;
+        text-transform: uppercase;
+        opacity: 1;
+        padding: 15px 15px;
+    }
+}

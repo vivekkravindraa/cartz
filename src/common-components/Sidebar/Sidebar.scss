@@ -1,0 +1,29 @@
+.sidebarContainer {
+    & .sidebarItem {
+        display: grid;
+        grid-template-columns: 10fr 2fr;
+        padding: 10px;
+
+        & > p {
+            display: flex;
+            align-items: center;
+            text-align: left;
+            font-weight: 600;
+            font-size: 12px;
+            font-family: Roboto, sans-serif;
+            letter-spacing: 0px;
+            color: #00243E;
+            opacity: 1;
+            margin: 0;
+        }
+
+        & > img {
+            height: 24px;
+            margin: 0 auto;
+        }
+    }
+
+    & .sidebarItem:hover {
+        background: #ECE3FD;
+    }
+}

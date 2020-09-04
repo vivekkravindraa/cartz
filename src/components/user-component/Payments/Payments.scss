@@ -1,0 +1,269 @@
+@media(min-width: 0px) and (max-width: 767px) {
+    .paymentsContainer {
+        & .paymentsHeader {
+            display: flex;
+            align-items: center;
+            padding: 20px 10px;
+    
+            & > img {
+                height: 24px;
+            }
+    
+            & > p {
+                text-align: left;
+                font-weight: 600;
+                font-size: 16px;
+                font-family: Roboto, sans-serif;
+                color: #00243E;
+                opacity: 1;
+                margin: 0;
+            }
+        }
+
+        & .paymentsAmountPayable {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 10px;
+            background: #F4F7FC;
+
+            & > p:first-child {
+                text-align: left;
+                font-weight: 400;
+                font-size: 16px;
+                font-family: Roboto, sans-serif;
+                color: #00243E;
+                opacity: 1;
+                margin: 0;
+            }
+
+            & > p:last-child {
+                text-align: left;
+                font-weight: 600;
+                font-size: 16px;
+                font-family: Roboto, sans-serif;
+                color: #00243E;
+                opacity: 1;
+                margin: 0;
+            }
+        }
+
+        & .payments {
+            display: flex;
+            flex-direction: column;
+            padding: 25px 0;
+
+            & > div {
+                display: grid;
+                grid-template-columns: 3fr 9fr;
+                padding: 10px;
+                margin: 0 10px;
+                border-bottom: 1px solid #D3D3D3;
+
+                & > img {
+                    height: 48px;
+                }
+
+                & > p {
+                    display: flex;
+                    align-items: center;
+                    text-align: left;
+                    font-weight: 500;
+                    font-size: 16px;
+                    font-family: Roboto, sans-serif;
+                    color: #00243E;
+                    opacity: 1;
+                    margin: 0;
+                }
+            }
+
+            & > div:last-child {
+                border-bottom: 1px solid #FFFFFF;
+            }
+
+            & > div:hover {
+                background: #F4F7FC;
+            }
+        }
+    }
+}
+
+@media(min-width: 768px) and (max-width: 991px) {
+    .paymentsContainer {
+        & .paymentsHeader {
+            display: flex;
+            align-items: center;
+            padding: 20px 10px;
+    
+            & > img {
+                height: 24px;
+            }
+    
+            & > p {
+                text-align: left;
+                font-weight: 600;
+                font-size: 16px;
+                font-family: Roboto, sans-serif;
+                color: #00243E;
+                opacity: 1;
+                margin: 0;
+            }
+        }
+
+        & .paymentsAmountPayable {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 100px;
+            background: #F4F7FC;
+
+            & > p:first-child {
+                text-align: left;
+                font-weight: 400;
+                font-size: 16px;
+                font-family: Roboto, sans-serif;
+                color: #00243E;
+                opacity: 1;
+                margin: 0;
+            }
+
+            & > p:last-child {
+                text-align: left;
+                font-weight: 600;
+                font-size: 16px;
+                font-family: Roboto, sans-serif;
+                color: #00243E;
+                opacity: 1;
+                margin: 0;
+            }
+        }
+
+        & .payments {
+            padding: 25px 100px;
+            display: flex;
+            flex-direction: column;
+
+            & > div {
+                display: grid;
+                grid-template-columns: 3fr 9fr;
+                padding: 10px;
+                margin: 0 10px;
+                border-bottom: 1px solid #D3D3D3;
+
+                & > img {
+                    height: 48px;
+                }
+
+                & > p {
+                    display: flex;
+                    align-items: center;
+                    text-align: left;
+                    font-weight: 500;
+                    font-size: 16px;
+                    font-family: Roboto, sans-serif;
+                    color: #00243E;
+                    opacity: 1;
+                    margin: 0;
+                }
+            }
+
+            & > div:last-child {
+                border-bottom: 1px solid #FFFFFF;
+            }
+
+            & > div:hover {
+                background: #F4F7FC;
+            }
+        }
+    }
+}
+
+@media(min-width: 991px) and (max-width: 4096px) {
+    .paymentsContainer {
+        & .paymentsHeader {
+            display: flex;
+            align-items: center;
+            padding: 20px 10px;
+    
+            & > img {
+                height: 24px;
+            }
+    
+            & > p {
+                text-align: left;
+                font-weight: 600;
+                font-size: 16px;
+                font-family: Roboto, sans-serif;
+                color: #00243E;
+                opacity: 1;
+                margin: 0;
+            }
+        }
+
+        & .paymentsAmountPayable {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 100px;
+            background: #F4F7FC;
+
+            & > p:first-child {
+                text-align: left;
+                font-weight: 400;
+                font-size: 16px;
+                font-family: Roboto, sans-serif;
+                color: #00243E;
+                opacity: 1;
+                margin: 0;
+            }
+
+            & > p:last-child {
+                text-align: left;
+                font-weight: 600;
+                font-size: 16px;
+                font-family: Roboto, sans-serif;
+                color: #00243E;
+                opacity: 1;
+                margin: 0;
+            }
+        }
+
+        & .payments {
+            padding: 25px 100px;
+            display: flex;
+            flex-direction: column;
+
+            & > div {
+                display: grid;
+                grid-template-columns: 2fr 10fr;
+                padding: 10px;
+                margin: 0 10px;
+                border-bottom: 1px solid #D3D3D3;
+
+                & > img {
+                    height: 48px;
+                }
+
+                & > p {
+                    display: flex;
+                    align-items: center;
+                    text-align: left;
+                    font-weight: 500;
+                    font-size: 16px;
+                    font-family: Roboto, sans-serif;
+                    color: #00243E;
+                    opacity: 1;
+                    margin: 0;
+                }
+            }
+
+            & > div:last-child {
+                border-bottom: 1px solid #FFFFFF;
+            }
+
+            & > div:hover {
+                background: #F4F7FC;
+            }
+        }
+    }
+}

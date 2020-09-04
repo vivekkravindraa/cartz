@@ -1,0 +1,23 @@
+@media (min-width: 0px) and (max-width: 991px) {
+    .autoCarouselThreeContainer {
+        margin: 10px;
+    }
+
+    .slider-wrapper {
+        border-radius: 10px;
+        background-color: #FFFFFF;   
+    }
+
+    #autoCarouselThree .carousel .slide {
+        height: 15vh;
+    }
+
+    #autoCarouselThree .carousel .slide img {
+        height: 15vh;
+        width: 100%;
+    }
+
+    .carousel .carousel-status {
+        display: none;
+    }
+}

@@ -1,0 +1,411 @@
+@media(min-width: 0px) and (max-width: 767px) {
+    .walletContainer {
+        & > div:first-child {
+            & >  p:first-child {
+                display: flex;
+                align-items: center;
+                text-align: left;
+                font-weight: 600;
+                font-size: 14px;
+                font-family: Roboto, sans-serif;
+                letter-spacing: 0px;
+                color: #00243E;
+                text-transform: capitalize;
+                opacity: 1;
+                margin: 10px;
+
+                & > img {
+                    height: 14px;
+                    margin-right: 8px;
+                }
+            }
+    
+            & .walletItems {
+                display: grid;
+                padding: 0 10px;
+                row-gap: 10px;
+    
+                & .walletItem {
+                    box-shadow: 1px 1px 1px 1px #00000029;
+                    border-radius: 22px;
+                    padding: 25px;
+    
+                    & > div:first-child {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+    
+                        & > div:first-child {    
+                            & > p:first-child {
+                                text-align: left;
+                                font-weight: 600;
+                                font-size: 14px;
+                                font-family: Roboto, sans-serif;
+                                letter-spacing: 0px;
+                                color: #00243E;
+                                text-transform: capitalize;
+                                opacity: 1;
+                                margin: 0 0 4px 0;
+                            }
+        
+                            & > p:last-child {
+                                text-align: left;
+                                font-weight: 400;
+                                font-size: 12px;
+                                font-family: Roboto, sans-serif;
+                                letter-spacing: 0px;
+                                color: #00243E;
+                                text-transform: capitalize;
+                                opacity: 1;
+                                margin: 0;
+                            }
+
+                            & > p:last-child::before {
+                                content:"••••";
+                                font-weight: 600;
+                                font-size: 12px;
+                            }
+                        }
+        
+                        & > div:last-child {
+                            & > img {
+                                height: 44px;
+                            }
+                        }
+                    }
+    
+                    & > div:last-child {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        padding-top: 50px;
+    
+                        & > p {
+                            text-align: left;
+                            font-weight: 500;
+                            font-size: 16px;
+                            font-family: Roboto, sans-serif;
+                            letter-spacing: 0px;
+                            color: #00243E;
+                            text-transform: capitalize;
+                            opacity: 1;
+                            margin: 0 10px 0 0;
+                        }
+    
+                        & > img {
+                            height: 16px;
+                        }
+                    }
+                }
+    
+                & .walletItem:nth-child(2) {
+                    background: #40404F;
+                }
+    
+                & .walletItem:nth-child(3) {
+                    background: #132274;
+                }
+    
+                & .walletItem:nth-child(4) {
+                    background: #458346;
+                }
+            }
+    
+            & > div:last-child {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 15px 0;
+    
+                & > p {
+                    width: 50%;
+                    background: #EC312E;
+                    border-radius: 22px;
+                    padding: 10px 0;
+                    text-align: center;
+                    font-weight: 500;
+                    font-size: 12px;
+                    font-family: Roboto, sans-serif;
+                    letter-spacing: 0px;
+                    color: #FFFFFF;
+                    text-transform: capitalize;
+                    opacity: 1;
+                    margin: 0 10px;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 768px) and (max-width: 991px) {
+    .walletContainer {
+        padding: 25px;
+
+        & > div:first-child {            
+            & > p:first-child {
+                display: flex;
+                align-items: center;
+                text-align: left;
+                font-weight: 600;
+                font-size: 14px;
+                font-family: Roboto, sans-serif;
+                letter-spacing: 0px;
+                color: #00243E;
+                text-transform: capitalize;
+                opacity: 1;
+                margin: 10px;
+
+                & > img {
+                    height: 14px;
+                    margin-right: 8px;
+                }
+            }
+    
+            & .walletItems {
+                display: grid;
+                grid-template-columns: 6fr 6fr;
+                grid-gap: 25px;
+                padding: 0 10px;
+                row-gap: 10px;
+    
+                & .walletItem {
+                    box-shadow: 1px 1px 1px 1px #00000029;
+                    border-radius: 22px;
+                    padding: 25px;
+    
+                    & > div:first-child {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+    
+                        & > div:first-child {    
+                            & > p:first-child {
+                                text-align: left;
+                                font-weight: 600;
+                                font-size: 14px;
+                                font-family: Roboto, sans-serif;
+                                letter-spacing: 0px;
+                                color: #00243E;
+                                text-transform: capitalize;
+                                opacity: 1;
+                                margin: 0 0 4px 0;
+                            }
+        
+                            & > p:last-child {
+                                text-align: left;
+                                font-weight: 400;
+                                font-size: 12px;
+                                font-family: Roboto, sans-serif;
+                                letter-spacing: 0px;
+                                color: #00243E;
+                                text-transform: capitalize;
+                                opacity: 1;
+                                margin: 0;
+                            }
+
+                            & > p:last-child::before {
+                                content: "••••";
+                                font-weight: 600;
+                                font-size: 12px;
+                            }
+                        }
+        
+                        & > div:last-child {
+                            & > img {
+                                height: 44px;
+                            }
+                        }
+                    }
+    
+                    & > div:last-child {
+                        display: flex;
+                        align-items: center;
+                        padding-top: 50px;
+    
+                        & > p {
+                            text-align: left;
+                            font-weight: 500;
+                            font-size: 16px;
+                            font-family: Roboto, sans-serif;
+                            letter-spacing: 0px;
+                            color: #00243E;
+                            text-transform: capitalize;
+                            opacity: 1;
+                            margin: 0 10px 0 0;
+                        }
+    
+                        & > img {
+                            height: 16px;
+                        }
+                    }
+                }
+    
+                & .walletItem:nth-child(2) {
+                    background: #40404F;
+                }
+    
+                & .walletItem:nth-child(3) {
+                    background: #132274;
+                }
+    
+                & .walletItem:nth-child(4) {
+                    background: #458346;
+                }
+            }
+    
+            & > div:last-child {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 15px 0;
+    
+                & > p {
+                    width: 50%;
+                    background: #EC312E;
+                    border-radius: 22px;
+                    padding: 10px 0;
+                    text-align: center;
+                    font-weight: 500;
+                    font-size: 14px;
+                    font-family: Roboto, sans-serif;
+                    letter-spacing: 0px;
+                    color: #FFFFFF;
+                    text-transform: capitalize;
+                    opacity: 1;
+                    margin: 0 10px;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 992px) and (max-width: 4096px) {
+    .walletContainer {
+        display: grid;
+        grid-template-columns: 2fr 10fr;
+        column-gap: 25px;
+        margin: 40px;
+
+        & > div:nth-child(2) {
+            padding: 0 50px;
+
+            & >  p:first-child {
+                text-align: left;
+                font-weight: 600;
+                font-size: 14px;
+                font-family: Roboto, sans-serif;
+                letter-spacing: 0px;
+                color: #00243E;
+                text-transform: capitalize;
+                opacity: 1;
+                margin: 0 0 10px 0;
+            }
+    
+            & .walletItems {
+                display: grid;
+                grid-template-columns: 5fr 5fr;
+                grid-gap: 25px;
+    
+                & .walletItem {
+                    box-shadow: 1px 1px 1px 1px #00000029;
+                    border-radius: 22px;
+                    padding: 25px;
+    
+                    & > div:first-child {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+    
+                        & > div:first-child {    
+                            & > p:first-child {
+                                text-align: left;
+                                font-weight: 600;
+                                font-size: 14px;
+                                font-family: Roboto, sans-serif;
+                                letter-spacing: 0px;
+                                color: #00243E;
+                                text-transform: capitalize;
+                                opacity: 1;
+                                margin: 0 0 4px 0;
+                            }
+        
+                            & > p:last-child {
+                                text-align: left;
+                                font-weight: 400;
+                                font-size: 12px;
+                                font-family: Roboto, sans-serif;
+                                letter-spacing: 0px;
+                                color: #00243E;
+                                text-transform: capitalize;
+                                opacity: 1;
+                                margin: 0;
+                            }
+
+                            & > p:last-child::before {
+                                content: "••••";
+                                font-weight: 600;
+                                font-size: 12px;
+                            }
+                        }
+        
+                        & > div:last-child {
+                            & > img {
+                                height: 44px;
+                            }
+                        }
+                    }
+    
+                    & > div:last-child {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        padding-top: 50px;
+    
+                        & > p {
+                            text-align: left;
+                            font-weight: 500;
+                            font-size: 16px;
+                            font-family: Roboto, sans-serif;
+                            letter-spacing: 0px;
+                            color: #00243E;
+                            text-transform: capitalize;
+                            opacity: 1;
+                            margin: 0 10px 0 0;
+                        }
+    
+                        & > img {
+                            height: 16px;
+                        }
+                    }
+                }
+    
+                & .walletItem:nth-child(2) {
+                    background: #40404F;
+                }
+    
+                & .walletItem:nth-child(3) {
+                    background: #132274;
+                }
+    
+                & .walletItem:nth-child(4) {
+                    background: #458346;
+                }
+            }
+    
+            & > div:last-child {
+                padding: 15px 0 0 0;
+    
+                & > p {
+                    text-align: left;
+                    font-weight: 500;
+                    font-size: 14px;
+                    font-family: Roboto, sans-serif;
+                    letter-spacing: 0px;
+                    color: #EC312E;
+                    text-transform: capitalize;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

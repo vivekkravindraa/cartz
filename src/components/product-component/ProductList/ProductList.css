@@ -1,0 +1,604 @@
+@media (min-width: 0px) and (max-width: 767px) {
+    .productListContainer {
+        position: relative;
+        background-color: '#f4f7fc';
+    }
+
+    .productListHeader,
+    .productListBreadcrumbs,
+    .productListSortBy {
+        display: none;
+    }
+
+    .productListMobileHeader {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px;
+    }
+
+    .productListMobileHeader > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .productListMobileHeader > div > p {
+        text-align: center;
+        font-weight: 600;
+        font-size: 24px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 0px;
+        color: #00243E;
+        margin: 0;
+    }
+    
+    .productListFilterByChoice {
+        display: flex;
+        padding: 40px 10px 20px 10px;
+        border-bottom: 1px solid #E0E0E0;
+        overflow-x: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .productListFilterByChoice::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .productListFilterByChoice > p:first-child {
+        text-align: left;
+        font-weight: 400;
+        font-size: 14px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 2.6px;
+        color: #000000;
+        text-transform: uppercase;
+        opacity: 0.37;
+        margin: 0 25px 0 0;
+    }
+
+    .productListMobileFilterByChoice {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .productListMobileFilterByChoice > img {
+        height: 32px;
+        border: 1px solid #E0E0E0;
+        border-radius: 4px;
+        background: #ffffff;
+        margin-right: 10px;
+        text-transform: capitalize;
+        padding: 10px;
+        margin: 0 35px;
+        opacity: 1;
+    }
+
+    .productListMobileFilterByChoice > p {
+        text-align: center;
+        font-weight: 600;
+        font-size: 11px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 0px;
+        color: #00243E;
+    }
+    
+    .productListFilterByChoice > button:first-of-type {
+        background: #E0E0E0;
+    }
+    
+    .productListContent {
+        display: flex;
+    }
+    
+    .productListFilters {
+        display: none;
+    }
+    
+    .productListBrands > p:first-child,
+    .productListPrices > p:first-child,
+    .productListDiscounts > p:first-child {
+        text-align: left;
+        font-weight: 600;
+        font-size: 12px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 1.6px;
+        color: #00243E;
+        opacity: 1;
+        margin: 0 0 0 4px;
+        padding: 20px 0;
+    }
+    
+    .productListFilterByBrands,
+    .productListFilterByPrices,
+    .productListFilterByDiscounts {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+    
+    .productListFilterByBrands,
+    .productListFilterByPrices {
+        border-bottom: 1px solid #e0e0e0;
+    }
+    
+    .productListFilterByBrands > p {
+        text-align: left;
+        font-weight: 600;
+        font-size: 12px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 0px;
+        color: #E31221;
+        text-transform: uppercase;
+        opacity: 1;
+        margin-left: 22px;
+    }
+    
+    .productListFilterByBrand,
+    .productListFilterByPrice,
+    .productListFilterByDiscount {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: left;
+        font-weight: 500;
+        font-size: 12px;
+        font-weight: Roboto, sans-serif;
+        letter-spacing: 0px;
+        color: #00243E;
+        white-space: pre;
+        margin: 0 0 5px 0; 
+    }
+    
+    .productListFilterByBrand > p,
+    .productListFilterByPrice > p,
+    .productListFilterByDiscount > p {
+        margin: 0;
+    }
+    
+    .productListItems {
+        display: grid;
+        grid-template-columns: repeat(2, 6fr);
+        column-gap: 10px;
+        row-gap: 10px;
+        padding: 10px;
+    }
+
+    .productListMobileFilters {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: transparent;
+        position: absolute;
+        left: 50%;
+        margin-left: -100px;
+        top: 500px;
+    }
+
+    .productListMobileFilterBy,
+    .productListMobileSortBy {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #000000;
+        padding: 0 25px;
+    }
+
+    .productListMobileFilterBy {
+        border-radius: 25px 0 0 25px;
+    }
+
+    .productListMobileSortBy {
+        border-radius: 0 25px 25px 0;
+    }
+
+    .productListMobileFilterBy > p,
+    .productListMobileSortBy > p {
+        color: #ffffff;
+        margin-left: 10px;
+        text-align: left;
+        font-weight: 500;
+        font-size: 12px;
+        font-weight: Roboto, sans-serif;
+        letter-spacing: 0px;
+        white-space: pre;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .productListContainer {
+        position: relative;
+        background-color: '#f4f7fc';
+    }
+
+    .productListHeader,
+    .productListBreadcrumbs,
+    .productListSortBy {
+        display: none;
+    }
+
+    .productListMobileHeader {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px;
+    }
+
+    .productListMobileHeader > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .productListMobileHeader > div > p {
+        text-align: center;
+        font-weight: 600;
+        font-size: 24px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 0px;
+        color: #00243E;
+        margin: 0;
+    }
+    
+    .productListFilterByChoice {
+        display: flex;
+        padding: 40px 10px 20px 10px;
+        border-bottom: 1px solid #E0E0E0;
+        overflow-x: auto;
+    }
+    
+    .productListFilterByChoice > p:first-child {
+        text-align: left;
+        font-weight: 400;
+        font-size: 14px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 2.6px;
+        color: #000000;
+        text-transform: uppercase;
+        opacity: 0.37;
+        margin: 0 25px 0 0;
+    }
+
+    .productListMobileFilterByChoice {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .productListMobileFilterByChoice > img {
+        height: 32px;
+        border: 1px solid #E0E0E0;
+        border-radius: 4px;
+        background: #ffffff;
+        margin-right: 10px;
+        text-transform: capitalize;
+        padding: 5px 5px;
+        margin: 0 50px 0 0;
+        opacity: 1;
+    }
+
+    .productListMobileFilterByChoice > p {
+        text-align: center;
+        font-weight: 600;
+        font-size: 11px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 0px;
+        color: #00243E;
+    }
+    
+    .productListFilterByChoice > button:first-of-type {
+        background: #E0E0E0;
+    }
+    
+    .productListContent {
+        display: flex;
+    }
+    
+    .productListFilters {
+        display: none;
+    }
+    
+    .productListBrands > p:first-child,
+    .productListPrices > p:first-child,
+    .productListDiscounts > p:first-child {
+        text-align: left;
+        font-weight: 600;
+        font-size: 12px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 1.6px;
+        color: #00243E;
+        opacity: 1;
+        margin: 0 0 0 4px;
+        padding: 20px 0;
+    }
+    
+    .productListFilterByBrands,
+    .productListFilterByPrices,
+    .productListFilterByDiscounts {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+    
+    .productListFilterByBrands,
+    .productListFilterByPrices {
+        border-bottom: 1px solid #e0e0e0;
+    }
+    
+    .productListFilterByBrands > p {
+        text-align: left;
+        font-weight: 600;
+        font-size: 12px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 0px;
+        color: #E31221;
+        text-transform: uppercase;
+        opacity: 1;
+        margin-left: 22px;
+    }
+    
+    .productListFilterByBrand,
+    .productListFilterByPrice,
+    .productListFilterByDiscount {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: left;
+        font-weight: 500;
+        font-size: 12px;
+        font-weight: Roboto, sans-serif;
+        letter-spacing: 0px;
+        color: #00243E;
+        white-space: pre;
+        margin: 0 0 5px 0; 
+    }
+    
+    .productListFilterByBrand > p,
+    .productListFilterByPrice > p,
+    .productListFilterByDiscount > p {
+        margin: 0;
+    }
+    
+    .productListItems {
+        display: grid;
+        grid-template-columns: repeat(3, 4fr);
+        column-gap: 10px;
+        row-gap: 10px;
+        padding: 10px;
+    }
+
+    .productListMobileFilters {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: transparent;
+        position: absolute;
+        left: 50%;
+        margin-left: -100px;
+        top: 500px;
+    }
+
+    .productListMobileFilterBy,
+    .productListMobileSortBy {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #000000;
+        padding: 0 25px;
+    }
+
+    .productListMobileFilterBy {
+        border-radius: 25px 0 0 25px;
+    }
+
+    .productListMobileSortBy {
+        border-radius: 0 25px 25px 0;
+    }
+
+    .productListMobileFilterBy > p,
+    .productListMobileSortBy > p {
+        color: #ffffff;
+        margin-left: 10px;
+        text-align: left;
+        font-weight: 500;
+        font-size: 12px;
+        font-weight: Roboto, sans-serif;
+        letter-spacing: 0px;
+        white-space: pre;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 4096px) {
+    .productListHeader {
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+        background: #F4F7FC 0% 0% no-repeat padding-box;
+        padding: 10px 0;
+    }
+
+    .productListMobileHeader,
+    .productListMobileFilters {
+        display: none;
+    }
+    
+    .productListBreadcrumbs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 10px;
+    }
+    
+    .productListBreadcrumbs > p:first-of-type {
+        text-align: left;
+        font-weight: 600;
+        font-size: 12px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 0px;
+        color: #00243E;
+        margin: 0 0 5px 0;
+    }
+    
+    .productListBreadcrumbs > p:last-of-type {
+        text-align: left;
+        font-weight: 600;
+        font-size: 12px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 0px;
+        color: #00243E;
+        margin: 0;
+    }
+    
+    .productListSortBy {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 60px;
+    }
+    
+    .productListSortBy > img {
+        margin-right: 10px;
+    }
+    
+    .productListSortBy > p {
+        text-align: left;
+        font-weight: 600;
+        font-size: 12px;
+        font-weight: Roboto, sans-serif;
+        letter-spacing: 0px;
+        color: #343434;
+        opacity: 1;
+        margin-right: 10px;
+    }
+    
+    .productListSortBy > select {
+        border: 1px solid #00243E;
+        border-radius: 6px;
+        opacity: 1;
+        padding: 10px 20px 10px 20px;
+    }
+    
+    .productListFilterByChoice {
+        display: flex;
+        padding: 40px 10px 20px 10px;
+        border-bottom: 1px solid #E0E0E0;
+    }
+    
+    .productListFilterByChoice > p:first-child {
+        text-align: left;
+        font-weight: 400;
+        font-size: 14px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 2.6px;
+        color: #000000;
+        text-transform: uppercase;
+        opacity: 0.37;
+        margin: 0 25px 0 0;
+    }
+    
+    .productListFilterByChoice > button {
+        width: 100px;
+        border: 1px solid #E0E0E0;
+        border-radius: 4px;
+        background: #ffffff;
+        margin-right: 10px;
+        text-align: center;
+        font-weight: 600;
+        font-size: 11px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 0px;
+        color: #00243E;
+        text-transform: capitalize;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 5px;
+        margin: 0 50px 0 0;
+        opacity: 1;
+    }
+    
+    .productListFilterByChoice > button:first-of-type {
+        background: #E0E0E0;
+    }
+    
+    .productListContent {
+        display: grid;
+        grid-template-columns: 2fr 10fr;
+    }
+    
+    .productListFilters {
+        border-right: 1px solid #E0E0E0;
+        padding: 0 4px;
+    }
+    
+    .productListBrands > p:first-child,
+    .productListPrices > p:first-child,
+    .productListDiscounts > p:first-child {
+        text-align: left;
+        font-weight: 600;
+        font-size: 12px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 1.6px;
+        color: #00243E;
+        opacity: 1;
+        margin: 0 0 0 4px;
+        padding: 20px 0;
+    }
+    
+    .productListFilterByBrands,
+    .productListFilterByPrices,
+    .productListFilterByDiscounts {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+    
+    .productListFilterByBrands,
+    .productListFilterByPrices {
+        border-bottom: 1px solid #e0e0e0;
+    }
+    
+    .productListFilterByBrands > p {
+        text-align: left;
+        font-weight: 600;
+        font-size: 12px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 0px;
+        color: #E31221;
+        text-transform: uppercase;
+        opacity: 1;
+        margin-left: 22px;
+    }
+    
+    .productListFilterByBrand,
+    .productListFilterByPrice,
+    .productListFilterByDiscount {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: left;
+        font-weight: 500;
+        font-size: 12px;
+        font-weight: Roboto, sans-serif;
+        letter-spacing: 0px;
+        color: #00243E;
+        white-space: pre;
+        margin: 0 0 5px 0; 
+    }
+    
+    .productListFilterByBrand > p,
+    .productListFilterByPrice > p,
+    .productListFilterByDiscount > p {
+        margin: 0;
+    }
+    
+    .productListItems {
+        display: grid;
+        grid-template-columns: repeat(4, 2.5fr);
+        column-gap: 20px;
+        row-gap: 20px;
+        padding: 20px;
+    }    
+}

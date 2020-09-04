@@ -1,0 +1,2470 @@
+@media(min-width: 0px) and (max-width: 767px) {
+    .myOrdersContainer {
+        display: grid;
+
+        & .myOrdersContent {
+            & .myOrdersFilters {
+                & .myOrdersFiltersHeader {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 10px;
+                    margin: 10px;
+
+                    & > p:first-child {
+                        display: flex;
+                        align-items: center;
+                        text-align: left;
+                        font-weight: 600;
+                        font-size: 16px;
+                        font-family: Roboto, sans-serif;
+                        letter-spacing: 0px;
+                        color: #00243E;
+                        opacity: 1;
+                        margin: 0;
+
+                        & > img {
+                            height: 32px;
+                        }
+                    }
+    
+                    & > img {
+                        height: 16px;
+                        margin-right: 4px;
+                        display: flex;
+                        align-items: center;
+                    }
+    
+                    & > p:last-child {
+                        display: none;
+                    }
+                }
+
+                & .myOrdersFilterItems {
+                    display: grid;
+                    grid-template-columns: repeat(2, 6fr);
+                    padding: 15px 0;
+    
+                    & > div {   
+                        border-bottom: 1px solid #D3D3D3;
+
+                        & > p {
+                            text-align: center;
+                            font-weight: 600;
+                            font-size: 14px;
+                            font-family: Roboto, sans-serif;
+                            letter-spacing: 0px;
+                            color: #D3D3D3;
+                            opacity: 1;
+                            margin: 0;
+                        }
+    
+                        & p:hover {
+                            color: #00243E;
+                        }
+            
+                        & > p::after {
+                            position: relative;
+                            content: "";
+                            display: block;
+                            width: 20%;
+                            padding: 1px 0;
+                            border-bottom: 2px solid #FFFFFF;
+                        }
+    
+                        & > p:hover::after {
+                            position: relative;
+                            content: "";
+                            display: block;
+                            width: 100%;
+                            padding: 1px 0;
+                            border-bottom: 2px solid #00243E;
+                        }
+                    }
+                }
+            }
+
+            & .myOrdersList {
+                border-bottom: 1px solid #D3D3D3;
+    
+                & .myOrdersListItem {
+                    & > div:first-child {
+                        display: grid;
+                        grid-template-columns: 1fr 4.5fr 4.5fr;
+                        padding: 0 10px;
+    
+                        & > div:first-child {
+                            & > p {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                background: #ECE3FD;
+                                border-radius: 25px;
+                                height: 35px;
+                                width: 35px;
+                                font-weight: 600;
+                                font-size: 16px;
+                                font-family: Roboto, sans-serif;
+                            }
+                        }
+    
+                        & > div:nth-child(2) {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            padding-left: 10px;
+
+                            & > p:first-child {
+                                text-align: left;
+                                font-weight: 600;
+                                font-size: 12px;
+                                font-family: Roboto, sans-serif;
+                                letter-spacing: 0px;
+                                color: #343434;
+                                text-transform: capitalize;
+                                opacity: 1;
+                                margin: 0 0 10px 0;
+                            }
+    
+                            & > div {
+                                display: flex;
+                                align-items: center;
+    
+                                & > p:first-child {
+                                    text-align: left;
+                                    font-weight: 500;
+                                    font-size: 10px;
+                                    font-family: Roboto, sans-serif;
+                                    letter-spacing: 0px;
+                                    color: #A5A5A5;
+                                    text-transform: capitalize;
+                                    opacity: 1;
+                                    margin: 0 10px 0 0;
+                                }
+    
+                                & > p:last-child {
+                                    text-align: left;
+                                    font-weight: 500;
+                                    font-size: 10px;
+                                    font-family: Roboto, sans-serif;
+                                    letter-spacing: 0px;
+                                    color: #A5A5A5;
+                                    opacity: 1;
+                                    margin: 0;
+                                }
+                            }
+                        }
+    
+                        & > div:last-child {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-end;
+                            align-items: flex-end;
+                        
+                            & > p:first-child {
+                                text-align: left;
+                                font-weight: 600;
+                                font-size: 12px;
+                                font-family: Roboto, sans-serif;
+                                letter-spacing: 0px;
+                                color: #00243E;
+                                opacity: 1;
+                                margin: 0;
+                            }
+    
+                            & > div:last-child {
+                                display: flex;
+                                align-items: center;
+    
+                                & > img {
+                                    height: 44px;
+                                }
+    
+                                & > p {
+                                    text-align: left;
+                                    font-weight: 500;
+                                    font-size: 12px;
+                                    font-family: Roboto, sans-serif;
+                                    letter-spacing: 0px;
+                                    color: #9F9F9F;
+                                    text-transform: capitalize;
+                                    opacity: 1;
+                                    margin: 0;
+                                }
+                            }
+                        }
+                    }
+    
+                    & > div:last-child {
+                        display: grid;
+                        row-gap: 10px;
+                        padding: 25px 10px;
+    
+                        & > div {
+                            display: grid;
+                            grid-template-columns: 5fr 1fr;
+                            background: #FFFFFF 0% 0% no-repeat padding-box;
+                            box-shadow: 0px 1px 3px #00000029;
+                            border-radius: 6px;
+                            opacity: 1;
+                            padding: 10px;
+    
+                            & > div:first-child {
+                                & > p:first-child {
+                                    text-align: left;
+                                    font-weight: 600;
+                                    font-size: 12px;
+                                    font-family: Roboto, sans-serif;
+                                    letter-spacing: 0px;
+                                    color: #00243E;
+                                    opacity: 1;
+                                    margin: 0 0 4px 0;
+                                }
+    
+                                & > p:nth-child(2) {
+                                    text-align: left;
+                                    font-weight: 600;
+                                    font-size: 14px;
+                                    font-family: Roboto, sans-serif;
+                                    letter-spacing: 0px;
+                                    color: #00243E;
+                                    opacity: 1;
+                                    margin: 0 0 4px 0;
+                                }
+    
+                                & > div:last-child {
+                                    display: flex;
+                                    justify-content: space-between;
+    
+                                    & > p:first-child {
+                                        display: flex;
+                                        align-items: center;
+                                        text-align: left;
+                                        font-weight: 500;
+                                        font-size: 14px;
+                                        font-family: Roboto, sans-serif;
+                                        letter-spacing: 0px;
+                                        color: #00243E;
+                                        opacity: 1;
+                                        margin: 0;
+    
+                                        & > img {
+                                            height: 16px;
+                                        }
+                                    }
+    
+                                    & > p:last-child {
+                                        text-align: left;
+                                        font-weight: 500;
+                                        font-size: 14px;
+                                        font-family: Roboto, sans-serif;
+                                        letter-spacing: 0px;
+                                        color: #00243E;
+                                        opacity: 1;
+                                        margin: 0;
+                                    }
+                                }
+                            }
+    
+                            & > div:last-child {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+    
+                                & > img {
+                                    height: 64px;
+                                }
+                            }
+                        }
+                    }
+                }
+    
+                & .myOrdersViewMore {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding-bottom: 25px;
+                    
+                    & > img {
+                        height: 24px;
+                        margin-right: 4px;
+                    }
+    
+                    & > p {
+                        text-align: left;
+                        font-weight: 600;
+                        font-size: 12px;
+                        font-family: Roboto, sans-serif;
+                        letter-spacing: 2px;
+                        color: #EC312E;
+                        text-transform: capitalize;
+                        opacity: 1;
+                        margin: 0;
+                    }
+                }
+            }
+
+            // & .myOrdersList {  
+            //     padding: 0 10px;
+            //     border-bottom: 1px solid #D3D3D3;
+                
+            //     & .myOrdersListItem {
+            //         & > div:first-child {
+            //             display: none
+            //         }
+    
+            //         & > div:last-child {
+            //             display: grid;
+            //             row-gap: 10px;
+            //             padding: 25px 0;
+    
+            //             & > div {
+            //                 display: grid;
+            //                 grid-template-columns: 5fr 1fr;
+            //                 background: #FFFFFF 0% 0% no-repeat padding-box;
+            //                 box-shadow: 0px 1px 3px #00000029;
+            //                 border-radius: 6px;
+            //                 opacity: 1;
+            //                 padding: 10px;
+    
+            //                 & > div:first-child {
+            //                     & > p:first-child {
+            //                         text-align: left;
+            //                         font-weight: 600;
+            //                         font-size: 12px;
+            //                         font-family: Roboto, sans-serif;
+            //                         letter-spacing: 0px;
+            //                         color: #00243E;
+            //                         opacity: 1;
+            //                         margin: 0 0 4px 0;
+            //                     }
+
+            //                     & > div:first-of-type {
+            //                         display: flex;
+            //                         align-items: baseline;
+
+            //                         & > p:first-child {
+            //                             text-align: left;
+            //                             font-weight: 600;
+            //                             font-size: 12px;
+            //                             font-family: Roboto, sans-serif;
+            //                             letter-spacing: 0px;
+            //                             color: #9f9f9f;
+            //                             opacity: 1;
+            //                             margin: 0 0 4px 0;
+            //                         }
+
+            //                         & > p:nth-child(2) {
+            //                             text-align: left;
+            //                             font-weight: 600;
+            //                             font-size: 12px;
+            //                             font-family: Roboto, sans-serif;
+            //                             letter-spacing: 0px;
+            //                             color: #9f9f9f;
+            //                             opacity: 1;
+            //                             margin: 0 8px;
+            //                         }
+
+            //                         & > p:last-child {
+            //                             text-align: left;
+            //                             font-weight: 600;
+            //                             font-size: 12px;
+            //                             font-family: Roboto, sans-serif;
+            //                             letter-spacing: 0px;
+            //                             color: #9f9f9f;
+            //                             opacity: 1;
+            //                             margin: 0;
+            //                         }
+            //                     }
+
+            //                     & > div:nth-child(3) {
+            //                         display: flex;
+            //                         align-items: baseline;
+            //                         justify-content: center;
+            //                         width: 35%;
+            //                         clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+
+            //                         & > p:first-child {
+            //                             text-align: left;
+            //                             font-weight: 600;
+            //                             font-size: 10px;
+            //                             font-family: Roboto, sans-serif;
+            //                             letter-spacing: 0px;
+            //                             color: #FFFFFF;
+            //                             opacity: 1;
+            //                             margin: 0;
+            //                             padding: 2px;
+            //                         }
+            //                     }
+
+            //                     & > div:nth-child(4) {
+            //                         display: flex;
+            //                         align-items: baseline;
+            //                         padding-top: 2px;
+
+            //                         & > p:first-child {
+            //                             text-align: left;
+            //                             font-weight: 600;
+            //                             font-size: 12px;
+            //                             font-family: Roboto, sans-serif;
+            //                             letter-spacing: 0px;
+            //                             color: #00243E;
+            //                             opacity: 1;
+            //                             margin: 0;
+            //                         }
+
+            //                         & > p:nth-child(2) {
+            //                             text-align: left;
+            //                             font-weight: 600;
+            //                             font-size: 12px;
+            //                             font-family: Roboto, sans-serif;
+            //                             letter-spacing: 0px;
+            //                             color: #00243E;
+            //                             opacity: 1;
+            //                             margin: 0 8px;
+            //                         }
+
+            //                         & > p:last-child {
+            //                             text-align: left;
+            //                             font-weight: 600;
+            //                             font-size: 12px;
+            //                             font-family: Roboto, sans-serif;
+            //                             letter-spacing: 0px;
+            //                             color: #00243E;
+            //                             opacity: 1;
+            //                             margin: 0 0 4px 0;
+            //                         }
+            //                     }
+            //                 }
+    
+            //                 & > div:last-child {
+            //                     display: flex;
+            //                     justify-content: center;
+            //                     align-items: center;
+    
+            //                     & > img {
+            //                         height: 64px;
+            //                     }
+            //                 }
+            //             }
+            //         }
+            //     }
+
+            //     & .myOrdersViewMore {
+            //         display: flex;
+            //         align-items: center;
+            //         justify-content: center;
+            //         padding-bottom: 25px;
+                    
+            //         & > img {
+            //             height: 24px;
+            //             margin-right: 4px;
+            //         }
+    
+            //         & > p {
+            //             text-align: left;
+            //             font-weight: 600;
+            //             font-size: 12px;
+            //             font-family: Roboto, sans-serif;
+            //             letter-spacing: 2px;
+            //             color: #EC312E;
+            //             text-transform: capitalize;
+            //             opacity: 1;
+            //             margin: 0;
+            //         }
+            //     }
+            // }
+
+            & .myOrdersOrderAgain {
+                display: grid;
+                grid-template-columns: repeat(2, 6fr);
+                grid-gap: 10px;
+                padding: 0 10px;
+            }
+
+            & .myOrdersTracking {
+                display: flex;
+                flex-direction: column;
+                padding: 25px 10px;
+                border-bottom: 1px solid #D3D3D3;
+    
+                & .myOrdersTrackingDetails {
+                    padding: 10px;
+    
+                    & > div:first-child {
+                        display: grid;
+                        grid-template-columns: 1fr 5fr;
+    
+                        & > div:first-child {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+    
+                            & > div {
+                                background: #D41F4C;
+                                height: 10px;
+                                width: 10px;
+                                border-radius: 25px;
+                                border: 5px solid #FFFFFF;
+                                box-shadow: 1px 1px 1px 1px #00000029;
+                            }
+                        }
+    
+                        & > div:last-child {
+                            padding-bottom: 10px;
+    
+                            & > p:first-child {
+                                text-align: left;
+                                font-family: 600;
+                                font-size: 12px;
+                                font-family: Roboto, sans-serif;
+                                letter-spacing: 0px;
+                                color: #343434;
+                                text-transform: capitalize;
+                                opacity: 1;
+                                margin: 0 0 4px 0;
+                            }
+    
+                            & > p:last-child {
+                                text-align: left;
+                                font-family: 600;
+                                font-size: 12px;
+                                font-family: Roboto, sans-serif;
+                                letter-spacing: 0px;
+                                color: #343434;
+                                text-transform: capitalize;
+                                opacity: 1;
+                                margin: 0 0 4px 0;
+                            }
+                        }
+                    }
+    
+                    & > div:nth-child(2) {
+                        display: grid;
+                        grid-template-columns: 1fr 5fr;
+                        padding-bottom: 10px;
+    
+                        & > div:first-child {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+    
+                            & > div {
+                                background: #D41F4C;
+                                height: 10px;
+                                width: 10px;
+                                border-radius: 25px;
+                                border: 5px solid #FFFFFF;
+                                box-shadow: 1px 1px 1px 1px #00000029;
+                            }
+                        }
+    
+                        & > div:last-child {
+                            & > p:first-child,
+                            & > p:nth-child(2),
+                            & > p:last-child {
+                                text-align: left;
+                                font-family: 600;
+                                font-size: 12px;
+                                font-family: Roboto, sans-serif;
+                                letter-spacing: 0px;
+                                color: #343434;
+                                text-transform: capitalize;
+                                opacity: 1;
+                                margin: 0 0 4px 0;
+                            }
+                        }
+                    }
+    
+                    & > div:last-child {
+                        & > p {
+                            text-align: left;
+                            font-weight: 500;
+                            font-size: 12px;
+                            font-family: Roboto, sans-serif;
+                            letter-spacing: 0px;
+                            color: #343434;
+                            text-transform: capitalize;
+                            opacity: 1;
+                            margin: 0;
+    
+                            & > span {
+                                text-align: left;
+                                font-weight: 600;
+                                font-size: 12px;
+                                font-family: Roboto, sans-serif;
+                                letter-spacing: 0px;
+                                color: #EC312E;
+                                text-transform: uppercase;
+                                opacity: 1;
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+    
+                & > div:last-child {
+                    display: flex;
+                    justify-content: center;
+                    align-items: baseline;
+                    position: fixed;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+    
+                    & > button:first-child {
+                        width: 45%;
+                        background: transparent linear-gradient(90deg, #D41F4C 0%, #EC312E 100%) 0% 0% no-repeat padding-box;
+                        opacity: 1;
+                        border: none;
+                        outline: 0;
+                        border-radius: 22px;
+                        padding: 10px;
+                        margin-bottom: 10px;
+                        background: #643D95;
+                        color: #FFFFFF;
+                        font-weight: 500;
+                        font-size: 12px;
+                        font-family: Roboto, sans-serif;
+                    }
+    
+                    & > button:last-child {
+                        width: 45%;
+                        border: 1px solid #EC312E;
+                        opacity: 1;
+                        outline: 0;
+                        border-radius: 22px;
+                        padding: 10px;
+                        background: #FE0162;
+                        color: #FFFFFF;
+                        font-weight: 500;
+                        font-size: 12px;
+                        font-family: Roboto, sans-serif;
+                        margin-left: 10px;
+                    }
+                }
+            }
+
+            & .myOrdersEmail {
+                display: grid;
+                grid-template-columns: 2fr 10fr;
+                border-bottom: 1px solid #D3D3D3;
+                padding: 50px 10px;
+    
+                & > div:first-child {
+                    display: flex;
+                    justify-content: center;
+    
+                    & > img {
+                        height: 24px;
+                    }
+                }
+    
+                & > div:last-child {
+                    & > p:first-child {
+                        text-align: left;
+                        font-weight: 600;
+                        font-size: 14px;
+                        font-family: Roboto, sans-serif;
+                        letter-spacing: 0px;
+                        color: #343434;
+                        text-transform: capitalize;
+                        opacity: 1;
+                        margin: 0 0 4px 0;
+                    }
+    
+                    & > p:nth-child(2) {
+                        text-align: left;
+                        font-weight: 600;
+                        font-size: 12px;
+                        font-family: Roboto, sans-serif;
+                        letter-spacing: 0px;
+                        color: #9F9F9F;
+                        opacity: 1;
+                        margin: 0 0 8px 0;
+                    }
+    
+                    & > p:last-child {
+                        display: flex;
+                        align-items: center;
+                        text-align: left;
+                        font-weight: 500;
+                        font-size: 14px;
+                        font-family: Roboto, sans-serif;
+                        letter-spacing: 0px;
+                        color: #F88F00;
+                        text-transform: capitalize;
+                        opacity: 1;
+                        margin: 0;
+    
+                        & > img {
+                            height: 16px;
+                            margin-left: 4px;
+                        }
+                    }
+                }
+            }
+
+            & .myOrdersUser {
+                display: grid;
+                grid-template-columns: 2fr 10fr;
+                border-bottom: 1px solid #D3D3D3;
+                padding: 50px 10px;
+                
+                & > div:first-child {
+                    display: flex;
+                    justify-content: center;
+    
+                    & > img {
+                        height: 24px;
+                    }
+                }
+    
+                & > div:last-child {
+                    & > p:first-child {
+                        text-align: left;
+                        font-weight: 600;
+                        font-size: 14px;
+                        font-family: Roboto, sans-serif;
+                        letter-spacing: 0px;
+                        color: #343434;
+                        text-transform: capitalize;
+                        opacity: 1;
+                        margin: 0 0 8px 0;
+                    }
+    
+                    & > p:nth-child(2) {
+                        width: 240px;
+                        text-align: left;
+                        font-weight: 500;
+                        font-size: 12px;
+                        font-family: Roboto, sans-serif;
+                        letter-spacing: 0px;
+                        color: #343434;
+                        opacity: 1;
+                        margin: 0;
+                    }
+                }
+            }
+
+            & .myOrdersPayment {
+                display: grid;
+                grid-template-columns: 2fr 10fr;
+                // border-top: 10px solid transparent;
+                // border-image: url('../../../assets/images/user-component-assets/cartzMobileBorderRhombus/cartzMobileBorderRhombus.png') 50 round;
+                padding: 50px 0 60px 0;
+               
+                & > div:first-child {
+                    display: flex;
+                    justify-content: center;
+                    background: #F4F7FC;
+                    padding: 15px 0;
+    
+                    & > img {
+                        height: 24px;
+                        margin-left: 10px;
+                    }
+                }
+    
+                & > div:last-child {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 15px 10px;
+                    background: #F4F7FC;
+    
+                    & > div:first-child,
+                    & > div:last-child {
+                        display: flex;
+                        justify-content: space-between;
+    
+                        & > p {
+                            text-align: left;
+                            font-weight: 600;
+                            font-size: 14px;
+                            font-family: Roboto, sans-serif;
+                            letter-spacing: 0px;
+                            color: #343434;
+                            text-transform: capitalize;
+                            opacity: 1;
+                            margin: 0 0 15px 0;
+                        }
+                    }
+    
+                    & > div:nth-child(2),
+                    & > div:nth-child(3),
+                    & > div:nth-child(4),
+                    & > div:nth-child(5) {
+                        display: flex;
+                        justify-content: space-between;
+    
+                        & > p {
+                            text-align: left;
+                            font-weight: 400;
+                            font-size: 14px;
+                            font-family: Roboto, sans-serif;
+                            letter-spacing: 0px;
+                            color: #343434;
+                            text-transform: capitalize;
+                            opacity: 1;
+                            margin: 0 0 15px 0;
+                        }
+                    }
+                }
+            }
+
+            & .myOrdersRecentItems,
+            & .myOrdersControls {
+                display: none;
+            }
+        }
+
+        & .myOrdersFilterPopupOverlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(128,128,128,0.5);
+        }
+
+        & .myOrdersFiltersPopup {
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 350px;
+            background: #FFFFFF;
+            border-radius: 22px 22px 0 0;
+            box-shadow: 1px 1px 1px 1px #00000029;
+
+            & .myOrdersFiltersPopupHeader {
+                padding: 15px;
+
+                & > p {
+                    display: flex;
+                    align-items: center;
+                    text-align: left;
+                    font-weight: 600;
+                    font-size: 16px;
+                    font-family: Roboto, sans-serif;
+                    letter-spacing: 0px;
+                    color: #00243E;
+                    opacity: 1;
+                    margin: 0;
+                }
+            }
+
+            & .myOrdersFiltersPopupOptions {
+                display: grid;
+                grid-template-columns: 4fr 8fr;
+                overflow: scroll;
+
+                & .myOrdersFiltersPopupCategories {
+                    height: 100vh;
+                    background: #D3D3D3;
+
+                    & > div {
+                        padding: 10px;
+
+                        & > p {
+                            display: flex;
+                            align-items: center;
+                            text-align: left;
+                            font-weight: 600;
+                            font-size: 16px;
+                            font-family: Roboto, sans-serif;
+                            letter-spacing: 0px;
+                            color: #00243E;
+                            opacity: 1;
+                            margin: 0;
+                        }
+                    }
+                }
+
+                & .myOrdersFiltersPopupSubCategories {
+                    display: flex;
+                    flex-direction: column;
+                    height: 100vh;
+                    margin: 0 15px;
+
+                    & > p:first-child {
+                        display: flex;
+                        align-items: center;
+                        text-align: left;
+                        font-weight: 500;
+                        font-size: 16px;
+                        font-family: Roboto, sans-serif;
+                        letter-spacing: 0px;
+                        color: #00243E;
+                        opacity: 1;
+                        margin: 0;
+                        padding: 10px 0;
+                    }
+
+                    & > div {
+                        display: flex;
+                        align-items: center;
+                        padding: 15px 0;
+
+                        & > img {
+                            height: 16px;
+                            margin-right: 8px;
+                        }
+
+                        & > p {
+                            display: flex;
+                            align-items: center;
+                            text-align: left;
+                            font-weight: 600;
+                            font-size: 16px;
+                            font-family: Roboto, sans-serif;
+                            letter-spacing: 0px;
+                            color: #00243E;
+                            opacity: 1;
+                            margin: 0;
+                        } 
+                    }
+
+                    & > button {
+                        width: 40%;
+                        outline: 0;
+                        border: none;
+                        color: #FFFFFF;
+                        background: #D41F4C;
+                        box-shadow: 1px 1px 1px 1px #D41F4C;
+                        padding: 10px;
+                        border-radius: 22px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: left;
+                        font-weight: 600;
+                        font-size: 14px;
+                        font-family: Roboto, sans-serif;
+                        letter-spacing: 0px;
+                        opacity: 1;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 768px) and (max-width: 991px) {
+    .myOrdersContainer {
+        display: grid;
+ 
+        & .myOrdersContent {
+            & .myOrdersFilters {
+                padding: 10px;
+                margin: 10px;
+
+                & .myOrdersFiltersHeader {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    & > p:first-child {
+                        display: flex;
+                        align-items: center;
+                        text-align: left;
+                        font-weight: 600;
+                        font-size: 16px;
+                        font-family: Roboto, sans-serif;
+                        letter-spacing: 0px;
+                        color: #00243E;
+                        opacity: 1;
+                        margin: 0;
+
+                        & > img {
+                            height: 32px;
+                        }
+                    }
+    
+                    & > img {
+                        height: 16px;
+                        margin-right: 4px;
+                        display: flex;
+                        align-items: center;
+                    }
+    
+                    & > p:last-child {
+                        display: none;
+                    }
+                }
+
+                & .myOrdersFilterItems {
+                    display: grid;
+                    grid-template-columns: repeat(2, 6fr);
+                    padding: 15px 0;
+    
+                    & > div {   
+                        border-bottom: 1px solid #D3D3D3;
+
+                        & > p {
+                            text-align: center;
+                            font-weight: 600;
+                            font-size: 14px;
+                            font-family: Roboto, sans-serif;
+                            letter-spacing: 0px;
+                            color: #D3D3D3;
+                            opacity: 1;
+                            margin: 0;
+                        }
+    
+                        & p:hover {
+                            color: #00243E;
+                        }
+            
+                        & > p::after {
+                            position: relative;
+                            content: "";
+                            display: block;
+                            width: 20%;
+                            padding: 1px 0;
+                            border-bottom: 2px solid #FFFFFF;
+                        }
+    
+                        & > p:hover::after {
+                            position: relative;
+                            content: "";
+                            display: block;
+                            width: 100%;
+                            padding: 1px 0;
+                            border-bottom: 2px solid #00243E;
+                        }
+                    }
+                }
+            }
+
+            & .myOrdersList {
+                padding: 0 10px;
+                margin: 0 10px;
+                border-bottom: 1px solid #D3D3D3;
+
+                & .myOrdersListItem {
+                    & > div:first-child {
+                        display: none
+                    }
+    
+                    & > div:last-child {
+                        display: grid;
+                        grid-template-columns: 6fr 6fr;
+                        grid-gap: 10px;
+                        padding: 25px 0;
+    
+                        & > div {
+                            display: grid;
+                            grid-template-columns: 5fr 1fr;
+                            background: #FFFFFF 0% 0% no-repeat padding-box;
+                            box-shadow: 0px 1px 3px #00000029;
+                            border-radius: 6px;
+                            opacity: 1;
+                            padding: 10px;
+    
+                            & > div:first-child {
+                                & > p:first-child {
+                                    text-align: left;
+                                    font-weight: 600;
+                                    font-size: 12px;
+                                    font-family: Roboto, sans-serif;
+                                    letter-spacing: 0px;
+                                    color: #00243E;
+                                    opacity: 1;
+                                    margin: 0;
+                                }
+
+                                & > div:first-of-type {
+                                    display: flex;
+                                    align-items: baseline;
+
+                                    & > p:first-child {
+                                        text-align: left;
+                                        font-weight: 600;
+                                        font-size: 12px;
+                                        font-family: Roboto, sans-serif;
+                                        letter-spacing: 0px;
+                                        color: #9f9f9f;
+                                        opacity: 1;
+                                        margin: 0 0 4px 0;
+                                    }
+
+                                    & > p:nth-child(2) {
+                                        text-align: left;
+                                        font-weight: 600;
+                                        font-size: 12px;
+                                        font-family: Roboto, sans-serif;
+                                        letter-spacing: 0px;
+                                        color: #9f9f9f;
+                                        opacity: 1;
+                                        margin: 0 8px;
+                                    }
+
+                                    & > p:last-child {
+                                        text-align: left;
+                                        font-weight: 600;
+                                        font-size: 12px;
+                                        font-family: Roboto, sans-serif;
+                                        letter-spacing: 0px;
+                                        color: #9f9f9f;
+                                        opacity: 1;
+                                        margin: 0 0 4px 0;
+                                    }
+                                }
+
+                                & > div:nth-child(3) {
+                                    display: flex;
+                                    align-items: baseline;
+                                    justify-content: center;
+                                    width: 35%;
+                                    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+
+                                    & > p:first-child {
+                                        text-align: left;
+                                        font-weight: 600;
+                                        font-size: 10px;
+                                        font-family: Roboto, sans-serif;
+                                        letter-spacing: 0px;
+                                        color: #FFFFFF;
+                                        opacity: 1;
+                                        margin: 0;
+                                        padding: 2px;
+                                    }
+                                }
+
+                                & > div:nth-child(4) {
+                                    display: flex;
+                                    align-items: baseline;
+
+                                    & > p:first-child {
+                                        text-align: left;
+                                        font-weight: 600;
+                                        font-size: 12px;
+                                        font-family: Roboto, sans-serif;
+                                        letter-spacing: 0px;
+                                        color: #00243E;
+                                        opacity: 1;
+                                        margin: 0;
+                                    }
+
+                                    & > p:nth-child(2) {
+                                        text-align: left;
+                                        font-weight: 400;
+                                        font-size: 12px;
+                                        font-family: Roboto, sans-serif;
+                                        letter-spacing: 0px;
+                                        color: #00243E;
+                                        opacity: 1;
+                                        margin: 0 8px;
+                                    }
+
+                                    & > p:last-child {
+                                        text-align: left;
+                                        font-weight: 400;
+                                        font-size: 10px;
+                                        font-family: Roboto, sans-serif;
+                                        letter-spacing: 0px;
+                                        color: #00243E;
+                                        opacity: 1;
+                                        margin: 0 0 4px 0;
+                                    }
+                                }
+                            }
+    
+                            & > div:last-child {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+    
+                                & > img {
+                                    height: 64px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                & .myOrdersViewMore {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding-bottom: 25px;
+                    
+                    & > img {
+                        height: 24px;
+                        margin-right: 4px;
+                    }
+    
+                    & > p {
+                        text-align: left;
+                        font-weight: 600;
+                        font-size: 12px;
+                        font-family: Roboto, sans-serif;
+                        letter-spacing: 2px;
+                        color: #EC312E;
+                        text-transform: capitalize;
+                        opacity: 1;
+                        margin: 0;
+                    }
+                }
+            }
+            
+            & .myOrdersOrderAgain {
+                display: grid;
+                grid-template-columns: repeat(4, 3fr);
+                grid-gap: 10px;
+                padding: 0 10px;
+            }
+
+            & .myOrdersTracking {
+                display: flex;
+                flex-direction: column;
+                padding: 25px 10px;
+                border-bottom: 1px solid #D3D3D3;
+    
+                & .myOrdersTrackingDetails {
+                    padding: 10px;
+    
+                    & > div:first-child {
+                        display: grid;
+                        grid-template-columns: 1fr 5fr;
+    
+                        & > div:first-child {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+    
+                            & > div {
+                                background: #D41F4C;
+                                height: 10px;
+                                width: 10px;
+                                border-radius: 25px;
+                                border: 5px solid #FFFFFF;
+                                box-shadow: 1px 1px 1px 1px #00000029;
+                            }
+                        }
+    
+                        & > div:last-child {
+                            padding-bottom: 10px;
+    
+                            & > p:first-child {
+                                text-align: left;
+                                font-family: 600;
+                                font-size: 12px;
+                                font-family: Roboto, sans-serif;
+                                letter-spacing: 0px;
+                                color: #343434;
+                                text-transform: capitalize;
+                                opacity: 1;
+                                margin: 0 0 4px 0;
+                            }
+    
+                            & > p:last-child {
+                                text-align: left;
+                                font-family: 600;
+                                font-size: 12px;
+                                font-family: Roboto, sans-serif;
+                                letter-spacing: 0px;
+                                color: #343434;
+                                text-transform: capitalize;
+                                opacity: 1;
+                                margin: 0 0 4px 0;
+                            }
+                        }
+                    }
+    
+                    & > div:nth-child(2) {
+                        display: grid;
+                        grid-template-columns: 1fr 5fr;
+                        padding-bottom: 10px;
+    
+                        & > div:first-child {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+    
+                            & > div {
+                                background: #D41F4C;
+                                height: 10px;
+                                width: 10px;
+                                border-radius: 25px;
+                                border: 5px solid #FFFFFF;
+                                box-shadow: 1px 1px 1px 1px #00000029;
+                            }
+                        }
+    
+                        & > div:last-child {
+                            & > p:first-child,
+                            & > p:nth-child(2),
+                            & > p:last-child {
+                                text-align: left;
+                                font-family: 600;
+                                font-size: 12px;
+                                font-family: Roboto, sans-serif;
+                                letter-spacing: 0px;
+                                color: #343434;
+                                text-transform: capitalize;
+                                opacity: 1;
+                                margin: 0 0 4px 0;
+                            }
+                        }
+                    }
+    
+                    & > div:last-child {
+                        & > p {
+                            text-align: left;
+                            font-weight: 500;
+                            font-size: 12px;
+                            font-family: Roboto, sans-serif;
+                            letter-spacing: 0px;
+                            color: #343434;
+                            text-transform: capitalize;
+                            opacity: 1;
+                            margin: 0;
+    
+                            & > span {
+                                text-align: left;
+                                font-weight: 600;
+                                font-size: 12px;
+                                font-family: Roboto, sans-serif;
+                                letter-spacing: 0px;
+                                color: #EC312E;
+                                text-transform: uppercase;
+                                opacity: 1;
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+    
+                & > div:last-child {
+                    display: flex;
+                    justify-content: center;
+                    align-items: baseline;
+                    position: fixed;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+    
+                    & > button:first-child {
+                        width: 45%;
+                        background: transparent linear-gradient(90deg, #D41F4C 0%, #EC312E 100%) 0% 0% no-repeat padding-box;
+                        opacity: 1;
+                        border: none;
+                        outline: 0;
+                        border-radius: 22px;
+                        padding: 10px;
+                        margin-bottom: 10px;
+                        background: #643D95;
+                        color: #FFFFFF;
+                        font-weight: 500;
+                        font-size: 12px;
+                        font-family: Roboto, sans-serif;
+                    }
+    
+                    & > button:last-child {
+                        width: 45%;
+                        border: 1px solid #EC312E;
+                        opacity: 1;
+                        outline: 0;
+                        border-radius: 22px;
+                        padding: 10px;
+                        background: #FE0162;
+                        color: #FFFFFF;
+                        font-weight: 500;
+                        font-size: 12px;
+                        font-family: Roboto, sans-serif;
+                        margin-left: 10px;
+                    }
+                }
+            }
+
+            & .myOrdersEmail {
+                display: grid;
+                grid-template-columns: 2fr 10fr;
+                border-bottom: 1px solid #D3D3D3;
+                padding: 50px 10px;
+    
+                & > div:first-child {
+                    display: flex;
+                    justify-content: center;
+    
+                    & > img {
+                        height: 24px;
+                    }
+                }
+    
+                & > div:last-child {
+                    & > p:first-child {
+                        text-align: left;
+                        font-weight: 600;
+                        font-size: 14px;
+                        font-family: Roboto, sans-serif;
+                        letter-spacing: 0px;
+                        color: #343434;
+                        text-transform: capitalize;
+                        opacity: 1;
+                        margin: 0 0 4px 0;
+                    }
+    
+                    & > p:nth-child(2) {
+                        text-align: left;
+                        font-weight: 600;
+                        font-size: 12px;
+                        font-family: Roboto, sans-serif;
+                        letter-spacing: 0px;
+                        color: #9F9F9F;
+                        opacity: 1;
+                        margin: 0 0 8px 0;
+                    }
+    
+                    & > p:last-child {
+                        display: flex;
+                        align-items: center;
+                        text-align: left;
+                        font-weight: 500;
+                        font-size: 14px;
+                        font-family: Roboto, sans-serif;
+                        letter-spacing: 0px;
+                        color: #F88F00;
+                        text-transform: capitalize;
+                        opacity: 1;
+                        margin: 0;
+    
+                        & > img {
+                            height: 16px;
+                            margin-left: 4px;
+                        }
+                    }
+                }
+            }
+
+            & .myOrdersUser {
+                display: grid;
+                grid-template-columns: 2fr 10fr;
+                border-bottom: 1px solid #D3D3D3;
+                padding: 50px 10px;
+                
+                & > div:first-child {
+                    display: flex;
+                    justify-content: center;
+    
+                    & > img {
+                        height: 24px;
+                    }
+                }
+    
+                & > div:last-child {
+                    & > p:first-child {
+                        text-align: left;
+                        font-weight: 600;
+                        font-size: 14px;
+                        font-family: Roboto, sans-serif;
+                        letter-spacing: 0px;
+                        color: #343434;
+                        text-transform: capitalize;
+                        opacity: 1;
+                        margin: 0 0 8px 0;
+                    }
+    
+                    & > p:nth-child(2) {
+                        width: 280px;
+                        text-align: left;
+                        font-weight: 500;
+                        font-size: 12px;
+                        font-family: Roboto, sans-serif;
+                        letter-spacing: 0px;
+                        color: #343434;
+                        opacity: 1;
+                        margin: 0;
+                    }
+                }
+            }
+
+            & .myOrdersPayment {
+                display: grid;
+                grid-template-columns: 2fr 10fr;
+                // border-top: 10px solid transparent;
+                // border-image: url('../../../assets/images/user-component-assets/cartzMobileBorderRhombus/cartzMobileBorderRhombus.png') 50 round;
+                padding: 50px 0 60px 0;
+               
+                & > div:first-child {
+                    display: flex;
+                    justify-content: center;
+                    background: #F4F7FC;
+                    padding: 15px 0;
+    
+                    & > img {
+                        height: 24px;
+                        margin-left: 10px;
+                    }
+                }
+    
+                & > div:last-child {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 15px 10px;
+                    background: #F4F7FC;
+    
+                    & > div:first-child,
+                    & > div:last-child {
+                        display: flex;
+                        justify-content: space-between;
+    
+                        & > p {
+                            text-align: left;
+                            font-weight: 600;
+                            font-size: 14px;
+                            font-family: Roboto, sans-serif;
+                            letter-spacing: 0px;
+                            color: #343434;
+                            text-transform: capitalize;
+                            opacity: 1;
+                            margin: 0 0 15px 0;
+                        }
+                    }
+    
+                    & > div:nth-child(2),
+                    & > div:nth-child(3),
+                    & > div:nth-child(4),
+                    & > div:nth-child(5) {
+                        display: flex;
+                        justify-content: space-between;
+    
+                        & > p {
+                            text-align: left;
+                            font-weight: 400;
+                            font-size: 14px;
+                            font-family: Roboto, sans-serif;
+                            letter-spacing: 0px;
+                            color: #343434;
+                            text-transform: capitalize;
+                            opacity: 1;
+                            margin: 0 0 15px 0;
+                        }
+                    }
+                }
+            }
+
+            & .myOrdersRecentItems,
+            & .myOrdersControls {
+                display: none;
+            }
+        }
+
+        & .myOrdersFilterPopupOverlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(128,128,128,0.5);
+        }
+
+        & .myOrdersFiltersPopup {
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 500px;
+            background: #FFFFFF;
+            border-radius: 22px 22px 0 0;
+            box-shadow: 1px 1px 1px 1px #00000029;
+
+            & .myOrdersFiltersPopupHeader {
+                padding: 15px;
+
+                & > p {
+                    display: flex;
+                    align-items: center;
+                    text-align: left;
+                    font-weight: 600;
+                    font-size: 16px;
+                    font-family: Roboto, sans-serif;
+                    letter-spacing: 0px;
+                    color: #00243E;
+                    opacity: 1;
+                    margin: 0;
+                }
+            }
+
+            & .myOrdersFiltersPopupOptions {
+                display: grid;
+                grid-template-columns: 4fr 8fr;
+                overflow: scroll;
+
+                & .myOrdersFiltersPopupCategories {
+                    height: 100vh;
+                    background: #D3D3D3;
+
+                    & > div {
+                        padding: 10px;
+
+                        & > p {
+                            display: flex;
+                            align-items: center;
+                            text-align: left;
+                            font-weight: 600;
+                            font-size: 16px;
+                            font-family: Roboto, sans-serif;
+                            letter-spacing: 0px;
+                            color: #00243E;
+                            opacity: 1;
+                            margin: 0;
+                        }
+                    }
+                }
+
+                & .myOrdersFiltersPopupSubCategories {
+                    display: flex;
+                    flex-direction: column;
+                    height: 100vh;
+                    margin: 0 15px;
+
+                    & > p:first-child {
+                        display: flex;
+                        align-items: center;
+                        text-align: left;
+                        font-weight: 500;
+                        font-size: 16px;
+                        font-family: Roboto, sans-serif;
+                        letter-spacing: 0px;
+                        color: #00243E;
+                        opacity: 1;
+                        margin: 0;
+                        padding: 10px 0;
+                    }
+
+                    & > div {
+                        display: flex;
+                        align-items: center;
+                        padding: 15px 0;
+
+                        & > img {
+                            height: 16px;
+                            margin-right: 8px;
+                        }
+
+                        & > p {
+                            display: flex;
+                            align-items: center;
+                            text-align: left;
+                            font-weight: 600;
+                            font-size: 16px;
+                            font-family: Roboto, sans-serif;
+                            letter-spacing: 0px;
+                            color: #00243E;
+                            opacity: 1;
+                            margin: 0;
+                        } 
+                    }
+
+                    & > button {
+                        width: 40%;
+                        outline: 0;
+                        border: none;
+                        color: #FFFFFF;
+                        background: #D41F4C;
+                        box-shadow: 1px 1px 1px 1px #D41F4C;
+                        padding: 10px;
+                        border-radius: 22px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: left;
+                        font-weight: 600;
+                        font-size: 14px;
+                        font-family: Roboto, sans-serif;
+                        letter-spacing: 0px;
+                        opacity: 1;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 992px) and (max-width: 4096px) {
+    .myOrdersContainer {
+        display: grid;
+        grid-template-columns: 2fr 10fr;
+        column-gap: 25px;
+        margin: 40px;
+    
+        & .myOrdersContent {
+            padding: 0 50px;
+    
+            & .myOrdersFilters {
+                & .myOrdersFiltersHeader {
+                    display: flex;
+                    align-items: center;
+    
+                    & > img {
+                        height: 16px;
+                        margin-right: 4px;
+                        display: flex;
+                        align-items: center;
+                
+                        & > img {
+                            height: 16px;
+                            margin-right: 4px;
+                        }
+                
+                        & > p {
+                            text-align: left;
+                            font-weight: 600;
+                            font-size: 14px;
+                            font-family: Roboto, sans-serif;
+                            letter-spacing: 0px;
+                            color: #00243E;
+                            opacity: 1;
+                            margin: 0;
+                        }
+                    }
+    
+                    & > p {
+                        text-align: left;
+                        font-weight: 600;
+                        font-size: 14px;
+                        font-family: Roboto, sans-serif;
+                        letter-spacing: 0px;
+                        color: #00243E;
+                        opacity: 1;
+                        margin: 0;
+                    }
+                }
+    
+                & .myOrdersFilterItems {
+                    display: grid;
+                    grid-template-columns: repeat(4, 2.5fr);
+                    padding: 15px 0;
+    
+                    & > div {                
+                        & > p {
+                            text-align: left;
+                            font-weight: 500;
+                            font-size: 14px;
+                            font-family: Roboto, sans-serif;
+                            letter-spacing: 0px;
+                            color: #D3D3D3;
+                            opacity: 1;
+                            margin: 0;
+                        }
+    
+                        & p:hover {
+                            color: #00243E;
+                        }
+            
+                        & > p::after {
+                            position: relative;
+                            content: "";
+                            display: block;
+                            width: 60%;
+                            padding: 1px 0;
+                            border-bottom: 2px solid #FFFFFF;
+                        }
+    
+                        & > p:hover::after {
+                            position: relative;
+                            content: "";
+                            display: block;
+                            width: 60%;
+                            padding: 1px 0;
+                            border-bottom: 2px solid #00243E;
+                        }
+                    }
+                }
+            }
+    
+            & .myOrdersList {
+                border-bottom: 1px solid #D3D3D3;
+    
+                & .myOrdersListItem {
+                    & > div:first-child {
+                        display: grid;
+                        grid-template-columns: 1fr 4.5fr 4.5fr;
+    
+                        & > div:first-child {
+                            & > p {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                background: #ECE3FD;
+                                border-radius: 25px;
+                                height: 50px;
+                                width: 50px;
+                                font-weight: 600;
+                                font-size: 16px;
+                                font-family: Roboto, sans-serif;
+                            }
+                        }
+    
+                        & > div:nth-child(2) {
+                            & > p:first-child {
+                                text-align: left;
+                                font-weight: 600;
+                                font-size: 14px;
+                                font-family: Roboto, sans-serif;
+                                letter-spacing: 0px;
+                                color: #343434;
+                                text-transform: capitalize;
+                                opacity: 1;
+                            }
+    
+                            & > div {
+                                display: flex;
+    
+                                & > p:first-child {
+                                    text-align: left;
+                                    font-weight: 500;
+                                    font-size: 14px;
+                                    font-family: Roboto, sans-serif;
+                                    letter-spacing: 0px;
+                                    color: #A5A5A5;
+                                    text-transform: capitalize;
+                                    opacity: 1;
+                                    margin: 0 10px 0 0;
+                                }
+    
+                                & > p:last-child {
+                                    text-align: left;
+                                    font-weight: 500;
+                                    font-size: 14px;
+                                    font-family: Roboto, sans-serif;
+                                    letter-spacing: 0px;
+                                    color: #A5A5A5;
+                                    opacity: 1;
+                                    margin: 0;
+                                }
+                            }
+                        }
+    
+                        & > div:last-child {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: flex-end;
+                        
+                            & > p:first-child {
+                                text-align: left;
+                                font-weight: 600;
+                                font-size: 16px;
+                                font-family: Roboto, sans-serif;
+                                letter-spacing: 0px;
+                                color: #00243E;
+                                opacity: 1;
+                                margin: 0;
+                            }
+    
+                            & > div:last-child {
+                                display: flex;
+                                align-items: center;
+    
+                                & > img {
+                                    height: 44px;
+                                }
+    
+                                & > p {
+                                    text-align: left;
+                                    font-weight: 500;
+                                    font-size: 14px;
+                                    font-family: Roboto, sans-serif;
+                                    letter-spacing: 0px;
+                                    color: #9F9F9F;
+                                    text-transform: capitalize;
+                                    opacity: 1;
+                                    margin: 0;
+                                }
+                            }
+                        }
+                    }
+    
+                    & > div:last-child {
+                        display: grid;
+                        grid-template-columns: 5fr 5fr;
+                        grid-gap: 20px;
+                        padding: 25px 0;
+    
+                        & > div {
+                            display: grid;
+                            grid-template-columns: 4fr 2fr;
+                            background: #FFFFFF 0% 0% no-repeat padding-box;
+                            box-shadow: 0px 1px 3px #00000029;
+                            border-radius: 6px;
+                            opacity: 1;
+                            padding: 10px;
+    
+                            & > div:first-child {
+                                & > p:first-child {
+                                    text-align: left;
+                                    font-weight: 600;
+                                    font-size: 12px;
+                                    font-family: Roboto, sans-serif;
+                                    letter-spacing: 0px;
+                                    color: #00243E;
+                                    opacity: 1;
+                                    margin: 0 0 4px 0;
+                                }
+    
+                                & > p:nth-child(2) {
+                                    text-align: left;
+                                    font-weight: 600;
+                                    font-size: 14px;
+                                    font-family: Roboto, sans-serif;
+                                    letter-spacing: 0px;
+                                    color: #00243E;
+                                    opacity: 1;
+                                    margin: 0 0 4px 0;
+                                }
+    
+                                & > div:last-child {
+                                    display: flex;
+                                    justify-content: space-between;
+    
+                                    & > p:first-child {
+                                        display: flex;
+                                        align-items: center;
+                                        text-align: left;
+                                        font-weight: 500;
+                                        font-size: 14px;
+                                        font-family: Roboto, sans-serif;
+                                        letter-spacing: 0px;
+                                        color: #00243E;
+                                        opacity: 1;
+                                        margin: 0;
+    
+                                        & > img {
+                                            height: 16px;
+                                        }
+                                    }
+    
+                                    & > p:last-child {
+                                        text-align: left;
+                                        font-weight: 500;
+                                        font-size: 14px;
+                                        font-family: Roboto, sans-serif;
+                                        letter-spacing: 0px;
+                                        color: #00243E;
+                                        opacity: 1;
+                                        margin: 0;
+                                    }
+                                }
+                            }
+    
+                            & > div:last-child {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+    
+                                & > img {
+                                    height: 64px;
+                                }
+                            }
+                        }
+                    }
+                }
+    
+                & .myOrdersViewMore {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding-bottom: 25px;
+                    
+                    & > img {
+                        height: 24px;
+                        margin-right: 4px;
+                    }
+    
+                    & > p {
+                        text-align: left;
+                        font-weight: 600;
+                        font-size: 12px;
+                        font-family: Roboto, sans-serif;
+                        letter-spacing: 2px;
+                        color: #EC312E;
+                        text-transform: capitalize;
+                        opacity: 1;
+                        margin: 0;
+                    }
+                }
+            }
+    
+            & .myOrdersTracking {
+                display: grid;
+                grid-template-columns: 6fr 6fr;
+                border-bottom: 1px solid #D3D3D3;
+    
+                & .myOrdersTrackingDetails {
+                    padding: 50px 0;
+    
+                    & > div:first-child {
+                        display: grid;
+                        grid-template-columns: 1fr 5fr;
+    
+                        & > div:first-child {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+    
+                            & > div {
+                                background: #D41F4C;
+                                height: 10px;
+                                width: 10px;
+                                border-radius: 25px;
+                                border: 5px solid #FFFFFF;
+                                box-shadow: 1px 1px 1px 1px #00000029;
+                            }
+                        }
+    
+                        & > div:last-child {
+                            padding-bottom: 10px;
+    
+                            & > p:first-child {
+                                text-align: left;
+                                font-family: 600;
+                                font-size: 12px;
+                                font-family: Roboto, sans-serif;
+                                letter-spacing: 0px;
+                                color: #343434;
+                                text-transform: capitalize;
+                                opacity: 1;
+                                margin: 0 0 4px 0;
+                            }
+    
+                            & > p:last-child {
+                                text-align: left;
+                                font-family: 600;
+                                font-size: 12px;
+                                font-family: Roboto, sans-serif;
+                                letter-spacing: 0px;
+                                color: #343434;
+                                text-transform: capitalize;
+                                opacity: 1;
+                                margin: 0 0 4px 0;
+                            }
+                        }
+                    }
+    
+                    & > div:nth-child(2) {
+                        display: grid;
+                        grid-template-columns: 1fr 5fr;
+                        padding-bottom: 10px;
+    
+                        & > div:first-child {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+    
+                            & > div {
+                                background: #D41F4C;
+                                height: 10px;
+                                width: 10px;
+                                border-radius: 25px;
+                                border: 5px solid #FFFFFF;
+                                box-shadow: 1px 1px 1px 1px #00000029;
+                            }
+                        }
+    
+                        & > div:last-child {
+                            & > p:first-child,
+                            & > p:nth-child(2),
+                            & > p:last-child {
+                                text-align: left;
+                                font-family: 600;
+                                font-size: 12px;
+                                font-family: Roboto, sans-serif;
+                                letter-spacing: 0px;
+                                color: #343434;
+                                text-transform: capitalize;
+                                opacity: 1;
+                                margin: 0 0 4px 0;
+                            }
+                        }
+                    }
+    
+                    & > div:last-child {
+                        & > p {
+                            text-align: left;
+                            font-weight: 500;
+                            font-size: 12px;
+                            font-family: Roboto, sans-serif;
+                            letter-spacing: 0px;
+                            color: #343434;
+                            text-transform: capitalize;
+                            opacity: 1;
+                            margin: 0;
+    
+                            & > span {
+                                text-align: left;
+                                font-weight: 600;
+                                font-size: 12px;
+                                font-family: Roboto, sans-serif;
+                                letter-spacing: 0px;
+                                color: #EC312E;
+                                text-transform: uppercase;
+                                opacity: 1;
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+    
+                & > div:last-child {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+    
+                    & > button:first-child {
+                        width: 50%;
+                        background: transparent linear-gradient(90deg, #D41F4C 0%, #EC312E 100%) 0% 0% no-repeat padding-box;
+                        opacity: 1;
+                        border: none;
+                        outline: 0;
+                        border-radius: 22px;
+                        padding: 10px;
+                        margin-bottom: 10px;
+                        color: #FFFFFF;
+                        font-weight: 500;
+                        font-size: 12px;
+                        font-family: Roboto, sans-serif;
+                    }
+    
+                    & > button:last-child {
+                        width: 50%;
+                        border: 1px solid #EC312E;
+                        opacity: 1;
+                        outline: 0;
+                        border-radius: 22px;
+                        padding: 10px;
+                        background: #FFFFFF;
+                        color: #EC312E;
+                        font-weight: 500;
+                        font-size: 12px;
+                        font-family: Roboto, sans-serif;
+                    }
+                }
+            }
+    
+            & .myOrdersEmail {
+                display: grid;
+                grid-template-columns: 1fr 11fr;
+                border-bottom: 1px solid #D3D3D3;
+                padding: 50px 0;
+    
+                & > div:first-child {
+                    display: flex;
+                    justify-content: center;
+    
+                    & > img {
+                        height: 24px;
+                    }
+                }
+    
+                & > div:last-child {
+                    & > p:first-child {
+                        text-align: left;
+                        font-weight: 600;
+                        font-size: 14px;
+                        font-family: Roboto, sans-serif;
+                        letter-spacing: 0px;
+                        color: #343434;
+                        text-transform: capitalize;
+                        opacity: 1;
+                        margin: 0 0 4px 0;
+                    }
+    
+                    & > p:nth-child(2) {
+                        text-align: left;
+                        font-weight: 600;
+                        font-size: 12px;
+                        font-family: Roboto, sans-serif;
+                        letter-spacing: 0px;
+                        color: #9F9F9F;
+                        opacity: 1;
+                        margin: 0 0 8px 0;
+                    }
+    
+                    & > p:last-child {
+                        display: flex;
+                        align-items: center;
+                        text-align: left;
+                        font-weight: 500;
+                        font-size: 14px;
+                        font-family: Roboto, sans-serif;
+                        letter-spacing: 0px;
+                        color: #F88F00;
+                        text-transform: capitalize;
+                        opacity: 1;
+                        margin: 0;
+    
+                        & > img {
+                            height: 16px;
+                            margin-left: 4px;
+                        }
+                    }
+                }
+            }
+    
+            & .myOrdersUser {
+                display: grid;
+                grid-template-columns: 1fr 11fr;
+                border-bottom: 1px solid #D3D3D3;
+                padding: 50px 0;
+                
+                & > div:first-child {
+                    display: flex;
+                    justify-content: center;
+    
+                    & > img {
+                        height: 24px;
+                    }
+                }
+    
+                & > div:last-child {
+                    & > p:first-child {
+                        text-align: left;
+                        font-weight: 600;
+                        font-size: 14px;
+                        font-family: Roboto, sans-serif;
+                        letter-spacing: 0px;
+                        color: #343434;
+                        text-transform: capitalize;
+                        opacity: 1;
+                        margin: 0 0 8px 0;
+                    }
+    
+                    & > p:nth-child(2) {
+                        width: 280px;
+                        text-align: left;
+                        font-weight: 500;
+                        font-size: 12px;
+                        font-family: Roboto, sans-serif;
+                        letter-spacing: 0px;
+                        color: #343434;
+                        opacity: 1;
+                        margin: 0;
+                    }
+                }
+            }
+    
+            & .myOrdersPayment {
+                display: grid;
+                grid-template-columns: 1fr 11fr;
+                // border-top: 10px solid transparent;
+                // border-image: url('../../../assets/images/user-component-assets/cartzMobileBorderRhombus/cartzMobileBorderRhombus.png') 50 round;
+                border-bottom: 1px solid #D3D3D3;
+                padding: 50px 0;
+               
+                & > div:first-child {
+                    display: flex;
+                    justify-content: center;
+                    background: #F4F7FC;
+                    padding: 15px 10px;
+    
+                    & > img {
+                        height: 24px;
+                    }
+                }
+    
+                & > div:last-child {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 15px 10px;
+                    background: #F4F7FC;
+    
+                    & > div:first-child,
+                    & > div:last-child {
+                        display: flex;
+                        justify-content: space-between;
+    
+                        & > p {
+                            text-align: left;
+                            font-weight: 600;
+                            font-size: 14px;
+                            font-family: Roboto, sans-serif;
+                            letter-spacing: 0px;
+                            color: #343434;
+                            text-transform: capitalize;
+                            opacity: 1;
+                            margin: 0 0 15px 0;
+                        }
+                    }
+    
+                    & > div:nth-child(2),
+                    & > div:nth-child(3),
+                    & > div:nth-child(4),
+                    & > div:nth-child(5) {
+                        display: flex;
+                        justify-content: space-between;
+    
+                        & > p {
+                            text-align: left;
+                            font-weight: 400;
+                            font-size: 14px;
+                            font-family: Roboto, sans-serif;
+                            letter-spacing: 0px;
+                            color: #343434;
+                            text-transform: capitalize;
+                            opacity: 1;
+                            margin: 0 0 15px 0;
+                        }
+                    }
+                }
+            }
+    
+            & .myOrdersRecentItems {
+                padding: 50px 0;
+    
+                & > div {
+                    display: grid;
+                    grid-template-columns: 1fr 5.5fr 5.5fr;
+                    padding-bottom: 10px;
+    
+                    & > div:first-child {
+                        & > p {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background: #ECE3FD;
+                            border-radius: 25px;
+                            height: 50px;
+                            width: 50px;
+                            font-weight: 600;
+                            font-size: 16px;
+                            font-family: Roboto, sans-serif;
+                        }
+                    }
+    
+                    & > div:nth-child(2) {
+                        & > p:first-child {
+                            text-align: left;
+                            font-weight: 600;
+                            font-size: 14px;
+                            font-family: Roboto, sans-serif;
+                            letter-spacing: 0px;
+                            color: #343434;
+                            text-transform: capitalize;
+                            opacity: 1;
+                            margin: 0 0 8px 0;
+                        }
+    
+                        & > div {
+                            display: flex;
+    
+                            & > p:first-child {
+                                text-align: left;
+                                font-weight: 500;
+                                font-size: 14px;
+                                font-family: Roboto, sans-serif;
+                                letter-spacing: 0px;
+                                color: #A5A5A5;
+                                text-transform: capitalize;
+                                opacity: 1;
+                                margin: 0 10px 8px 0;
+                            }
+    
+                            & > p:nth-child(2) {
+                                text-align: left;
+                                font-weight: 500;
+                                font-size: 14px;
+                                font-family: Roboto, sans-serif;
+                                letter-spacing: 0px;
+                                color: #A5A5A5;
+                                opacity: 1;
+                                margin: 0 0 8px 0;
+                            }
+                        }
+    
+                        & > p:last-child {
+                            text-align: left;
+                            font-weight: 500;
+                            font-size: 14px;
+                            font-family: Roboto, sans-serif;
+                            letter-spacing: 0px;
+                            color: #4EAD3C;
+                            opacity: 1;
+                            margin: 0;
+                        }
+                    }
+    
+                    & > div:last-child {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: flex-end;
+                    
+                        & > p:first-child {
+                            text-align: left;
+                            font-weight: 600;
+                            font-size: 16px;
+                            font-family: Roboto, sans-serif;
+                            letter-spacing: 0px;
+                            color: #00243E;
+                            opacity: 1;
+                            margin: 0;
+                        }
+    
+                        & > div:last-child {
+                            display: flex;
+                            align-items: center;
+    
+                            & > img {
+                                height: 44px;
+                            }
+    
+                            & > p {
+                                text-align: left;
+                                font-weight: 500;
+                                font-size: 14px;
+                                font-family: Roboto, sans-serif;
+                                letter-spacing: 0px;
+                                color: #9F9F9F;
+                                text-transform: capitalize;
+                                opacity: 1;
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+    
+            & .myOrdersControls {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                & > button:first-child,
+                & > button:last-child {
+                    background: #F4F7FC;
+                    padding: 10px;
+                    width: 15%;
+                    outline: 0;
+                    border: none;
+                    border-radius: 22px;
+                    margin-left: 10px;
+                    text-align: center;
+                    font-weight: 500;
+                    font-size: 10px;
+                    font-family: Roboto, sans-serif;
+                    letter-spacing: 0.7px;
+                    color: #00243E;
+                    text-transform: uppercase;
+                    opacity: 1;
+                }
+            }
+        }
+
+        & .myOrdersFiltersPopup {
+            display: none;
+        }
+    }    
+}

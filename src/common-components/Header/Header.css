@@ -1,0 +1,217 @@
+@media (min-width: 0px) and (max-width: 991px) {
+    .headerContainer {
+        position: relative;
+        background-color: '#F4F7FC';
+        min-height: 100px;
+    }
+
+    .headerLogo > img:first-child,
+    .headerHome,
+    .headerDropdown,
+    .headerLocation {
+        display: none;
+    }
+
+    .headerLogo > img:last-child {
+        position: absolute;
+        top: 12px;
+        left: 50%;
+        margin-left: -45px;
+    }
+
+    .headerSignIn {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        position: absolute;
+        top: 15px;
+        left: 10px;
+    }
+
+    .headerSignIn > p {
+        white-space: nowrap;
+        text-align: left;
+        font-weight: 600;
+        font-size: 15px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 0px;
+        color: #00243E;
+        text-transform: capitalize;
+        opacity: 1;
+        margin: 0 0 0 5px;
+    }
+
+    .headerMiddleContent {
+        position: relative;
+        top: 50px;
+        margin: 0 14px 10px 10px;
+        padding-top: 5px;
+    }
+
+    #headerSearchInput {
+        border: none;
+        outline: none !important;
+        height: 31px;
+        width: 100%;
+        opacity: 1;
+        border-radius: 5px;
+        background-image: url('../../assets/images/home-component-assets/search/search.svg');
+        background-size: fit-content;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+    
+    #headerSearchInput::placeholder {
+        text-align: center;
+    }
+
+    #headerSearchInput:focus {
+        background-image: none;
+    }
+
+    .headerRightContent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .headerFavourite {
+        position: absolute;
+        top: 15px;
+        right: 40px;
+    }
+
+    .headerCart {
+        position: absolute;
+        top: 15px;
+        right: 10px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 4096px) {
+    .headerContainer {
+        display: grid;
+        grid-template-columns: 35% 30% 35%;
+        padding: 15px 0;
+        box-shadow: 0px 2px 8px #00243E1F;
+    }
+    
+    .headerLeftContent {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .headerLogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+    }
+    
+    .headerLogo > img:first-child {
+        margin-right: 10px;
+    }
+    
+    .headerHome {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .headerHome > img:first-child {
+        margin-right: 5px;
+    }
+    
+    .headerHome > p {
+        text-align: left;
+        font-weight: 600;
+        font-size: 12px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 0px;
+        color: #00243E;
+        text-transform: capitalize;
+        opacity: 1;
+        margin: 0;
+    }
+    
+    .headerMiddleContent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .headerSearch > img {
+        position: relative;
+        top: 6px;
+        left: 34%;
+    }
+    
+    #headerSearchInput {
+        border: none;
+        outline: none !important;
+        min-width: 400px;
+        height: 31px;
+        background: #F6F6F6 0% 0% no-repeat padding-box;
+        opacity: 1;
+    }
+    
+    #headerSearchInput::placeholder {
+        text-align: center;
+    }
+    
+    #headerSearchInput {
+        background-image: url('../../assets/images/home-component-assets/search/search.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+    #headerSearchInput:focus {
+        background-image: none;
+    }
+    
+    .headerRightContent {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    .headerDropdown,
+    .headerLocation,
+    .headerSignIn,
+    .headerCart {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-right: 12px;
+    }
+
+    .headerFavourite {
+        display: none;
+    }
+
+    .headerCart {
+        margin-right: 0;
+    }
+    
+    .headerDropdown > p,
+    .headerLocation > img,
+    .headerSignIn > img {
+        margin-right: 5px;
+    }
+    
+    .headerDropdown > p,
+    .headerLocation > p,
+    .headerSignIn > p {
+        white-space: nowrap;
+        text-align: left;
+        font-weight: 600;
+        font-size: 12px;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 0px;
+        color: #00243E;
+        text-transform: capitalize;
+        opacity: 1;
+        margin: 0;
+    }
+}

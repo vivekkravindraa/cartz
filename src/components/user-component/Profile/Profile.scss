@@ -1,0 +1,1575 @@
+$default-font: Roboto, sans-serif;
+$grid-template-columns: 1fr 2.5fr 1fr;
+
+@media(min-width: 0px) and (max-width: 767px) {
+    .profileContainer {
+        display: flex;
+        flex-direction: column;
+    
+        & .profileDetails {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 240px;
+            background: #2F2042;
+
+            & .profileLocation {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+                margin: 10px;
+
+                & > div:first-child {
+                    & > img {
+                        height: 16px;
+                    }
+                }
+
+                & > div:last-child {
+                    display: flex;
+
+                    & > img {
+                        height: 16px;
+                        margin-right: 10px;
+                    }
+                    
+                    & > p {
+                        text-align: left;
+                        font-weight: 500;
+                        font-size: 14px;
+                        font-family: $default-font;
+                        letter-spacing: 0px;
+                        color: #FFFFFF;
+                        opacity: 1;
+                        margin: 0;
+                    }
+                }
+            }
+
+            & .profileUser {
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                row-gap: 10px;
+                padding: 10px;
+                margin: 10px;
+
+                & .profileUserImage {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    & > img {
+                        height: 60px;
+                    }
+                }
+        
+                & .profileUserName {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+    
+                    & > input:first-child {
+                        background: #F4F7FC;
+                        padding: 5px;
+                        outline: 0;
+                        border: none;
+                        margin-bottom: 5px;
+                        width: -webkit-fill-available;
+                    }
+    
+                    & > input:last-child {
+                        background: #F4F7FC;
+                        padding: 5px;
+                        outline: 0;
+                        border: none;
+                        width: -webkit-fill-available;
+                    }
+    
+                    & > p:first-child {
+                        text-align: left;
+                        font-weight: 600;
+                        font-size: 14px;
+                        font-family: $default-font;
+                        letter-spacing: 0px;
+                        color: #FFFFFF;
+                        opacity: 1;
+                        margin: 0;
+                    }
+        
+                    & > p:last-child {
+                        text-align: left;
+                        font-weight: 400;
+                        font-size: 12px;
+                        font-family: $default-font;
+                        letter-spacing: 0px;
+                        color: #FFFFFF;
+                        opacity: 1;
+                        margin: 10px 0 0 0;
+                    }
+                }
+    
+                & .profileUserEdit {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+    
+                    & > p {
+                        text-align: left;
+                        font-weight: 600;
+                        font-size: 14px;
+                        font-family: $default-font;
+                        letter-spacing: 0.22px;
+                        color: #EC312E;
+                        opacity: 1;
+                        margin: 0 0 0 4px;
+                    }
+                }
+            }
+    
+            & .profileUserData,
+            & .profileControls {
+                display: none;
+            }
+        }
+
+        & .profileMobileData {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+            & .profileLinks {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                padding: 10px;
+                background: #FFFFFF;
+                border-radius: 4px;
+                margin: 0 10px;
+                position: relative;
+                top: -25px;
+                box-shadow: 1px 1px 1px 1px #00000029;
+
+                & > div {
+                    display: flex;
+                    flex-direction: column;
+
+                    & > span {
+                        display: flex;
+                        justify-content: center;
+                        margin: 0 auto;
+                        height: 40px;
+                        width: 40px;
+                        border-radius: 20px;
+                        background: #E5D2FD;
+                    }
+
+                    & > p {
+                        display: flex;
+                        justify-content: center;
+                        text-align: left;
+                        font-weight: 600;
+                        font-size: 14px;
+                        font-family: $default-font;
+                        letter-spacing: 0px;
+                        color: #00243E;
+                        opacity: 1;
+                        margin: 4px 0 0 0;
+                    }
+                }
+            }
+
+            & .profileOptions {
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+                margin: 0 10px;
+                border-radius: 4px;
+                box-shadow: 1px 1px 1px 1px #00000029;
+
+                & > div {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 10px;
+
+                    & > p {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: left;
+                        font-weight: 500;
+                        font-size: 14px;
+                        font-family: $default-font;
+                        letter-spacing: 0px;
+                        color: #00243E;
+                        opacity: 1;
+                        margin: 0;
+                    }
+                }
+            }
+
+            & .profileAbout {
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+                margin: 20px 10px;
+                border-radius: 4px;
+                box-shadow: 1px 1px 1px 1px #00000029;
+
+                & > div {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 10px;
+
+                    & > p {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: left;
+                        font-weight: 500;
+                        font-size: 14px;
+                        font-family: $default-font;
+                        letter-spacing: 0px;
+                        color: #00243E;
+                        opacity: 1;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+        & .profileImage {
+            display: none;
+        }
+
+        & .profileHeader {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+
+            & .profileTitle {
+                display: flex;
+                align-items: baseline;
+                padding: 10px 0;
+
+                & > img {
+                    height: 12px;
+                    margin-right: 10px;
+                }
+
+                & > p {
+                    text-align: left;
+                    font-weight: 600;
+                    font-size: 14px;
+                    font-family: $default-font;
+                    letter-spacing: 0px;
+                    color: #00243E;
+                    opacity: 1;
+                    margin: 4px 0 0 0;
+                }
+            }
+
+            & .profileImage {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px 0;
+
+                & > img {
+                    height: 96px;
+                }
+            }
+
+            & .profileLinks {
+                display: flex;
+                justify-content: space-evenly;
+                padding: 10px 0;
+    
+                & .profileGoogleLink {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 46%;
+                    padding: 10px 0;
+                    border-radius: 4px;
+                    box-shadow: 1px 1px 1px 1px #00000029;
+
+                    & > img {
+                        height: 32px;
+                        margin-right: 4px;
+                    }
+
+                    & > p {
+                        white-space: nowrap;
+                        text-align: left;
+                        font-weight: 600;
+                        font-size: 15px;
+                        font-family: $default-font;
+                        letter-spacing: 0px;
+                        color: #00243E;
+                        opacity: 1;
+                        margin: 0;
+                    }
+                }
+    
+                & .profileFacebookLink {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 46%;
+                    padding: 10px 0;
+                    border-radius: 4px;
+                    box-shadow: 1px 1px 1px 1px #00000029;
+
+                    & > img {
+                        height: 32px;
+                        margin-right: 4px;
+                    }
+
+                    & > p {
+                        white-space: nowrap;
+                        text-align: left;
+                        font-weight: 600;
+                        font-size: 15px;
+                        font-family: $default-font;
+                        letter-spacing: 0px;
+                        color: #00243E;
+                        opacity: 1;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+        & .profileUserDataMobile {
+            display: flex;
+            flex-direction: column;
+
+            & .profileName,
+            & .profileGender,
+            & .profileDateOfBirth,
+            & .profilePhoneNumber,
+            & .profileEmail {
+                padding: 10px;
+                margin: 0 10px;
+
+                & > p:first-child {
+                    text-align: left;
+                    font-weight: 600;
+                    font-size: 10px;
+                    font-family: $default-font;
+                    letter-spacing: 0px;
+                    color: #808080;
+                    opacity: 1;
+                    margin: 0;
+                }
+            }
+
+            & .profileName {                
+                & > div {
+                    display: flex;
+                    border-bottom: 1px solid #DEDEDE;
+
+                    & > input {
+                        outline: 0;
+                        border: none;
+                        width: 80%;
+                        height: 32px;
+                    }
+
+                    & > p:first-child {
+                        text-align: left;
+                        font-weight: 600;
+                        font-size: 12px;
+                        font-family: $default-font;
+                        letter-spacing: 0px;
+                        color: #00243E;
+                        opacity: 1;
+                        margin: 0;
+                        padding: 8px 0;
+                        width: 80%;
+                    }
+
+                    & > p:last-child {
+                        width: 20%;
+                        margin: 0;
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                        text-align: left;
+                        font-weight: 600;
+                        font-size: 12px;
+                        font-family: $default-font;
+                        letter-spacing: 0px;
+                        color: #F0002E;
+                        opacity: 1;
+                        margin: 0;
+                    }
+                }
+            }
+
+            & .profileGender {
+                & > div {
+                    display: flex;
+                    border-bottom: 1px solid #DEDEDE;
+
+                    & > p {
+                        outline: 0;
+                        border: none;
+                        width: 80%;
+                        text-align: left;
+                        font-weight: 600;
+                        font-size: 12px;
+                        font-family: $default-font;
+                        letter-spacing: 0px;
+                        color: #00243E;
+                        opacity: 1;
+                        margin: 0;
+                        padding: 8px 0;
+                    }
+
+                    & > div {
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        width: 20%;
+
+                        & > img {
+                            height: 16px;
+                        }
+                    }
+                }
+            }
+
+            & .profileDateOfBirth {
+                & > div {
+                    display: flex;
+                    border-bottom: 1px solid #DEDEDE;
+
+                    & > input {
+                        outline: 0;
+                        border: none;
+                        width: 80%;
+                        height: 32px;
+                    }
+
+                    & > p:first-child {
+                        text-align: left;
+                        font-weight: 600;
+                        font-size: 12px;
+                        font-family: $default-font;
+                        letter-spacing: 0px;
+                        color: #00243E;
+                        opacity: 1;
+                        margin: 0;
+                        padding: 8px 0;
+                        width: 80%;
+                    }
+
+                    & > p:last-child {
+                        width: 20%;
+                        margin: 0;
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                        text-align: left;
+                        font-weight: 600;
+                        font-size: 12px;
+                        font-family: $default-font;
+                        letter-spacing: 0px;
+                        color: #F0002E;
+                        opacity: 1;
+                        margin: 0;
+                    }
+                }
+            }
+
+            & .profilePhoneNumber {
+                & > div {
+                    display: flex;
+                    border-bottom: 1px solid #DEDEDE;
+
+                    & > input {
+                        outline: 0;
+                        border: none;
+                        width: 80%;
+                        height: 32px;
+                    }
+
+                    & > p:first-child {
+                        text-align: left;
+                        font-weight: 600;
+                        font-size: 12px;
+                        font-family: $default-font;
+                        letter-spacing: 0px;
+                        color: #00243E;
+                        opacity: 1;
+                        margin: 0;
+                        padding: 8px 0;
+                        width: 80%;
+                    }
+
+                    & > p:last-child {
+                        width: 20%;
+                        margin: 0;
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                        text-align: left;
+                        font-weight: 600;
+                        font-size: 12px;
+                        font-family: $default-font;
+                        letter-spacing: 0px;
+                        color: #F0002E;
+                        opacity: 1;
+                        margin: 0;
+                    }
+                }
+            }
+
+            & .profileEmail {
+                & > div {
+                    display: flex;
+                    border-bottom: 1px solid #DEDEDE;
+
+                    & > input {
+                        outline: 0;
+                        border: none;
+                        width: 80%;
+                        height: 32px;
+                    }
+
+                    & > p:first-child {
+                        text-align: left;
+                        font-weight: 600;
+                        font-size: 12px;
+                        font-family: $default-font;
+                        letter-spacing: 0px;
+                        color: #00243E;
+                        opacity: 1;
+                        margin: 0;
+                        padding: 8px 0;
+                        width: 80%;
+                    }
+
+                    & > p:last-child {
+                        width: 20%;
+                        margin: 0;
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                        text-align: left;
+                        font-weight: 600;
+                        font-size: 12px;
+                        font-family: $default-font;
+                        letter-spacing: 0px;
+                        color: #F0002E;
+                        opacity: 1;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        
+        & .profileControls {
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+            margin: 0 10px;
+
+            & > button:first-of-type {
+                width: 50%;
+                background: #F4F7FC;
+                opacity: 1;
+                outline: 0;
+                border: none;
+                border-radius: 22px;
+                padding: 8px;
+                text-align: center;
+                font-weight: 600;
+                font-size: 12px;
+                font-family: $default-font;
+                letter-spacing: 0.9px;
+                color: #00243E;
+                text-transform: uppercase;
+                opacity: 1;
+                margin-right: 10px;
+            }
+
+            & > button:last-of-type {
+                width: 50%;
+                background: #EC312E;
+                opacity: 1;
+                outline: 0;
+                border: none;
+                border-radius: 22px;
+                padding: 8px;
+                text-align: center;
+                font-weight: 600;
+                font-size: 12px;
+                font-family: $default-font;
+                letter-spacing: 0px;
+                color: #FFFFFF;
+                text-transform: uppercase;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+@media(min-width: 768px) and (max-width: 991px) {
+    .profileContainer {
+        display: flex;
+        flex-direction: column;
+    
+        & .profileDetails {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 240px;
+            background: #2F2042;
+
+            & .profileLocation {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+                margin: 10px;
+
+                & > div:first-child {
+                    & > img {
+                        height: 16px;
+                    }
+                }
+
+                & > div:last-child {
+                    display: flex;
+
+                    & > img {
+                        height: 16px;
+                        margin-right: 10px;
+                    }
+                    
+                    & > p {
+                        text-align: left;
+                        font-weight: 500;
+                        font-size: 14px;
+                        font-family: $default-font;
+                        letter-spacing: 0px;
+                        color: #FFFFFF;
+                        opacity: 1;
+                        margin: 0;
+                    }
+                }
+            }
+
+            & .profileUser {
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                row-gap: 10px;
+                padding: 10px;
+                margin: 10px;
+
+                & .profileUserImage {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    & > img {
+                        height: 60px;
+                    }
+                }
+        
+                & .profileUserName {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+    
+                    & > input:first-child {
+                        background: #F4F7FC;
+                        padding: 5px;
+                        outline: 0;
+                        border: none;
+                        margin-bottom: 5px;
+                        width: -webkit-fill-available;
+                    }
+    
+                    & > input:last-child {
+                        background: #F4F7FC;
+                        padding: 5px;
+                        outline: 0;
+                        border: none;
+                        width: -webkit-fill-available;
+                    }
+    
+                    & > p:first-child {
+                        text-align: left;
+                        font-weight: 600;
+                        font-size: 14px;
+                        font-family: $default-font;
+                        letter-spacing: 0px;
+                        color: #FFFFFF;
+                        opacity: 1;
+                        margin: 0;
+                    }
+        
+                    & > p:last-child {
+                        text-align: left;
+                        font-weight: 400;
+                        font-size: 12px;
+                        font-family: $default-font;
+                        letter-spacing: 0px;
+                        color: #FFFFFF;
+                        opacity: 1;
+                        margin: 10px 0 0 0;
+                    }
+                }
+    
+                & .profileUserEdit {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+    
+                    & > p {
+                        text-align: left;
+                        font-weight: 600;
+                        font-size: 14px;
+                        font-family: $default-font;
+                        letter-spacing: 0.22px;
+                        color: #EC312E;
+                        opacity: 1;
+                        margin: 0 0 0 4px;
+                    }
+                }
+            }
+    
+            & .profileUserData,
+            & .profileControls {
+                display: none;
+            }
+        }
+
+        & .profileMobileData {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            padding: 0 100px;
+
+            & .profileLinks {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                padding: 10px;
+                background: #FFFFFF;
+                border-radius: 4px;
+                margin: 0 10px;
+                position: relative;
+                top: -25px;
+                box-shadow: 1px 1px 1px 1px #00000029;
+
+                & > div {
+                    display: flex;
+                    flex-direction: column;
+
+                    & > span {
+                        display: flex;
+                        justify-content: center;
+                        margin: 0 auto;
+                        height: 40px;
+                        width: 40px;
+                        border-radius: 20px;
+                        background: #E5D2FD;
+                    }
+
+                    & > p {
+                        display: flex;
+                        justify-content: center;
+                        text-align: left;
+                        font-weight: 600;
+                        font-size: 14px;
+                        font-family: $default-font;
+                        letter-spacing: 0px;
+                        color: #00243E;
+                        opacity: 1;
+                        margin: 4px 0 0 0;
+                    }
+                }
+            }
+
+            & .profileOptions {
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+                margin: 0 10px;
+                border-radius: 4px;
+                box-shadow: 1px 1px 1px 1px #00000029;
+
+                & > div {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 10px;
+
+                    & > p {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: left;
+                        font-weight: 500;
+                        font-size: 14px;
+                        font-family: $default-font;
+                        letter-spacing: 0px;
+                        color: #00243E;
+                        opacity: 1;
+                        margin: 0;
+                    }
+                }
+            }
+
+            & .profileAbout {
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+                margin: 20px 10px;
+                border-radius: 4px;
+                box-shadow: 1px 1px 1px 1px #00000029;
+
+                & > div {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 10px;
+
+                    & > p {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: left;
+                        font-weight: 500;
+                        font-size: 14px;
+                        font-family: $default-font;
+                        letter-spacing: 0px;
+                        color: #00243E;
+                        opacity: 1;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+        & .profileImage {
+            display: none;
+        }
+
+        & .profileHeader {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+
+            & .profileTitle {
+                display: flex;
+                align-items: baseline;
+                padding: 10px 0;
+
+                & > img {
+                    height: 12px;
+                    margin-right: 10px;
+                }
+
+                & > p {
+                    text-align: left;
+                    font-weight: 600;
+                    font-size: 14px;
+                    font-family: $default-font;
+                    letter-spacing: 0px;
+                    color: #00243E;
+                    opacity: 1;
+                    margin: 4px 0 0 0;
+                }
+            }
+
+            & .profileImage {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px 0;
+
+                & > img {
+                    height: 96px;
+                }
+            }
+
+            & .profileLinks {
+                display: flex;
+                justify-content: space-evenly;
+                padding: 0 100px;
+    
+                & .profileGoogleLink {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 46%;
+                    padding: 10px 0;
+                    border-radius: 4px;
+                    box-shadow: 1px 1px 1px 1px #00000029;
+
+                    & > img {
+                        height: 32px;
+                        margin-right: 4px;
+                    }
+
+                    & > p {
+                        white-space: nowrap;
+                        text-align: left;
+                        font-weight: 600;
+                        font-size: 15px;
+                        font-family: $default-font;
+                        letter-spacing: 0px;
+                        color: #00243E;
+                        opacity: 1;
+                        margin: 0;
+                    }
+                }
+    
+                & .profileFacebookLink {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 46%;
+                    padding: 10px 0;
+                    border-radius: 4px;
+                    box-shadow: 1px 1px 1px 1px #00000029;
+
+                    & > img {
+                        height: 32px;
+                        margin-right: 4px;
+                    }
+
+                    & > p {
+                        white-space: nowrap;
+                        text-align: left;
+                        font-weight: 600;
+                        font-size: 15px;
+                        font-family: $default-font;
+                        letter-spacing: 0px;
+                        color: #00243E;
+                        opacity: 1;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+        & .profileUserDataMobile {
+            display: flex;
+            flex-direction: column;
+            padding: 0 100px;
+
+            & .profileName,
+            & .profileGender,
+            & .profileDateOfBirth,
+            & .profilePhoneNumber,
+            & .profileEmail {
+                padding: 10px;
+                margin: 0 10px;
+
+                & > p:first-child {
+                    text-align: left;
+                    font-weight: 600;
+                    font-size: 10px;
+                    font-family: $default-font;
+                    letter-spacing: 0px;
+                    color: #808080;
+                    opacity: 1;
+                    margin: 0;
+                }
+            }
+
+            & .profileName {                
+                & > div {
+                    display: flex;
+                    border-bottom: 1px solid #DEDEDE;
+
+                    & > input {
+                        outline: 0;
+                        border: none;
+                        width: 80%;
+                        height: 32px;
+                    }
+
+                    & > p:first-child {
+                        text-align: left;
+                        font-weight: 600;
+                        font-size: 12px;
+                        font-family: $default-font;
+                        letter-spacing: 0px;
+                        color: #00243E;
+                        opacity: 1;
+                        margin: 0;
+                        padding: 8px 0;
+                        width: 80%;
+                    }
+
+                    & > p:last-child {
+                        width: 20%;
+                        margin: 0;
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                        text-align: left;
+                        font-weight: 600;
+                        font-size: 12px;
+                        font-family: $default-font;
+                        letter-spacing: 0px;
+                        color: #F0002E;
+                        opacity: 1;
+                        margin: 0;
+                    }
+                }
+            }
+
+            & .profileGender {
+                & > div {
+                    display: flex;
+                    border-bottom: 1px solid #DEDEDE;
+
+                    & > p {
+                        outline: 0;
+                        border: none;
+                        width: 80%;
+                        text-align: left;
+                        font-weight: 600;
+                        font-size: 12px;
+                        font-family: $default-font;
+                        letter-spacing: 0px;
+                        color: #00243E;
+                        opacity: 1;
+                        margin: 0;
+                        padding: 8px 0;
+                    }
+
+                    & > div {
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        width: 20%;
+
+                        & > img {
+                            height: 16px;
+                        }
+                    }
+                }
+            }
+
+            & .profileDateOfBirth {
+                & > div {
+                    display: flex;
+                    border-bottom: 1px solid #DEDEDE;
+
+                    & > input {
+                        outline: 0;
+                        border: none;
+                        width: 80%;
+                        height: 32px;
+                    }
+
+                    & > p:first-child {
+                        text-align: left;
+                        font-weight: 600;
+                        font-size: 12px;
+                        font-family: $default-font;
+                        letter-spacing: 0px;
+                        color: #00243E;
+                        opacity: 1;
+                        margin: 0;
+                        padding: 8px 0;
+                        width: 80%;
+                    }
+
+                    & > p:last-child {
+                        width: 20%;
+                        margin: 0;
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                        text-align: left;
+                        font-weight: 600;
+                        font-size: 12px;
+                        font-family: $default-font;
+                        letter-spacing: 0px;
+                        color: #F0002E;
+                        opacity: 1;
+                        margin: 0;
+                    }
+                }
+            }
+
+            & .profilePhoneNumber {
+                & > div {
+                    display: flex;
+                    border-bottom: 1px solid #DEDEDE;
+
+                    & > input {
+                        outline: 0;
+                        border: none;
+                        width: 80%;
+                        height: 32px;
+                    }
+
+                    & > p:first-child {
+                        text-align: left;
+                        font-weight: 600;
+                        font-size: 12px;
+                        font-family: $default-font;
+                        letter-spacing: 0px;
+                        color: #00243E;
+                        opacity: 1;
+                        margin: 0;
+                        padding: 8px 0;
+                        width: 80%;
+                    }
+
+                    & > p:last-child {
+                        width: 20%;
+                        margin: 0;
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                        text-align: left;
+                        font-weight: 600;
+                        font-size: 12px;
+                        font-family: $default-font;
+                        letter-spacing: 0px;
+                        color: #F0002E;
+                        opacity: 1;
+                        margin: 0;
+                    }
+                }
+            }
+
+            & .profileEmail {
+                & > div {
+                    display: flex;
+                    border-bottom: 1px solid #DEDEDE;
+
+                    & > input {
+                        outline: 0;
+                        border: none;
+                        width: 80%;
+                        height: 32px;
+                    }
+
+                    & > p:first-child {
+                        text-align: left;
+                        font-weight: 600;
+                        font-size: 12px;
+                        font-family: $default-font;
+                        letter-spacing: 0px;
+                        color: #00243E;
+                        opacity: 1;
+                        margin: 0;
+                        padding: 8px 0;
+                        width: 80%;
+                    }
+
+                    & > p:last-child {
+                        width: 20%;
+                        margin: 0;
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                        text-align: left;
+                        font-weight: 600;
+                        font-size: 12px;
+                        font-family: $default-font;
+                        letter-spacing: 0px;
+                        color: #F0002E;
+                        opacity: 1;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        
+        & .profileControls {
+            display: flex;
+            flex-direction: row;
+            padding: 0 100px;
+            margin: 10px;
+
+            & > button:first-of-type {
+                width: 50%;
+                background: #F4F7FC;
+                opacity: 1;
+                outline: 0;
+                border: none;
+                border-radius: 22px;
+                padding: 8px;
+                text-align: center;
+                font-weight: 600;
+                font-size: 12px;
+                font-family: $default-font;
+                letter-spacing: 0.9px;
+                color: #00243E;
+                text-transform: uppercase;
+                opacity: 1;
+                margin-right: 10px;
+            }
+
+            & > button:last-of-type {
+                width: 50%;
+                background: #EC312E;
+                opacity: 1;
+                outline: 0;
+                border: none;
+                border-radius: 22px;
+                padding: 8px;
+                text-align: center;
+                font-weight: 600;
+                font-size: 12px;
+                font-family: $default-font;
+                letter-spacing: 0px;
+                color: #FFFFFF;
+                text-transform: uppercase;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+@media(min-width: 991px) and (max-width: 4096px) {
+    .profileContainer {
+        display: grid;
+        grid-template-columns: 5fr 5fr;
+        grid-gap: 25px;
+        padding: 0 50px;
+    
+        & .profileDetails {
+            display: flex;
+            flex-direction: column;
+    
+            & .profileLocation {
+                display: none;
+            }
+    
+            & .profileUser {
+                display: grid;
+                grid-template-columns: $grid-template-columns;
+        
+                & .profileUserImage {
+                    & > img {
+                        height: 60px;
+                    }
+                }
+        
+                & .profileUserName {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+    
+                    & > input:first-child {
+                        background: #F4F7FC;
+                        padding: 5px;
+                        outline: 0;
+                        border: none;
+                        margin-bottom: 5px;
+                        width: -webkit-fill-available;
+                    }
+    
+                    & > input:last-child {
+                        background: #F4F7FC;
+                        padding: 5px;
+                        outline: 0;
+                        border: none;
+                        width: -webkit-fill-available;
+                    }
+    
+                    & > p:first-child {
+                        text-align: left;
+                        font-weight: 600;
+                        font-size: 14px;
+                        font-family: $default-font;
+                        letter-spacing: 0px;
+                        color: #00243E;
+                        opacity: 1;
+                        margin: 0;
+                    }
+        
+                    & > p:last-child {
+                        text-align: left;
+                        font-weight: 400;
+                        font-size: 12px;
+                        font-family: $default-font;
+                        letter-spacing: 0px;
+                        color: #00243E;
+                        opacity: 1;
+                        margin: 10px 0 0 0;
+                    }
+                }
+    
+                & .profileUserEdit {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+    
+                    & > p {
+                        text-align: left;
+                        font-weight: 600;
+                        font-size: 14px;
+                        font-family: $default-font;
+                        letter-spacing: 0.22px;
+                        color: #EC312E;
+                        opacity: 1;
+                        margin: 0;
+                    }
+                }
+            }
+    
+            & .profileUserData {
+                display: flex;
+                flex-direction: column;
+    
+                & .profileEmail {
+                    display: grid;
+                    grid-template-columns: $grid-template-columns;
+                    
+                    padding: 20px 0 10px 0;
+    
+                    & > label {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        text-align: left;
+                        font-weight: 600;
+                        font-size: 14px;
+                        font-family: $default-font;
+                        letter-spacing: 0px;
+                        color: #00243E;
+                        opacity: 1;
+                    }
+    
+                    & > p:first-of-type {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        text-align: left;
+                        font-weight: 500;
+                        font-size: 14px;
+                        font-family: $default-font;
+                        letter-spacing: 0px;
+                        color: #00243E;
+                        opacity: 1;
+                        margin: 0;
+                        height: 38px;
+                    }
+    
+                    & > p:last-child {
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                        text-align: left;
+                        font-weight: 600;
+                        font-size: 12px;
+                        font-family: $default-font;
+                        letter-spacing: 0.22px;
+                        color: #EC312E;
+                        opacity: 1;
+                        margin: 0;
+                    }
+    
+                    & > input {
+                        background: #F4F7FC;
+                        padding: 10px;
+                        outline: 0;
+                        border: none;
+                    }
+                }
+    
+                & .profileCountry {
+                    display: grid;
+                    grid-template-columns: $grid-template-columns;
+                    align-items: center;
+                    padding: 10px 0;
+    
+                    & > label {
+                        text-align: left;
+                        font-weight: 500;
+                        font-size: 14px;
+                        font-family: $default-font;
+                        letter-spacing: 0px;
+                        color: #00243E;
+                        opacity: 1;
+                    }
+    
+                    & > select {
+                        background: #F4F7FC;
+                        padding: 10px;
+                        outline: 0;
+                        border: none;
+                    }
+                }
+    
+                & .profileLanguage {
+                    display: grid;
+                    grid-template-columns: $grid-template-columns;
+                    align-items: center;
+                    padding: 10px 0;
+    
+                    & > label {
+                        text-align: left;
+                        font-weight: 500;
+                        font-size: 14px;
+                        font-family: $default-font;
+                        letter-spacing: 0px;
+                        color: #00243E;
+                        opacity: 1;
+                    }
+    
+                    & > select {
+                        background: #F4F7FC;
+                        padding: 10px;
+                        outline: 0;
+                        border: none;
+                    }
+                }
+    
+                & .profileGender {
+                    display: grid;
+                    grid-template-columns: $grid-template-columns;
+                    align-items: center;
+                    padding: 10px 0;
+    
+                    & > label {
+                        text-align: left;
+                        font-weight: 500;
+                        font-size: 14px;
+                        font-family: $default-font;
+                        letter-spacing: 0px;
+                        color: #00243E;
+                        opacity: 1;
+                    }
+    
+                    & > select {
+                        background: #F4F7FC;
+                        padding: 10px;
+                        outline: 0;
+                        border: none;
+                    }
+                }
+    
+                & .profileDateOfBirth {
+                    display: grid;
+                    grid-template-columns: $grid-template-columns;
+                    align-items: center;
+                    padding: 10px 0;
+    
+                    & > label {
+                        text-align: left;
+                        font-weight: 500;
+                        font-size: 14px;
+                        font-family: $default-font;
+                        letter-spacing: 0px;
+                        color: #00243E;
+                        opacity: 1;
+                    }
+    
+                    & > input {
+                        background: #F4F7FC;
+                        padding: 10px;
+                        outline: 0;
+                        border: none;
+                    }
+                }
+            }
+    
+            & .profileControls {
+                display: flex;
+                flex-direction: row;
+                padding: 10px 0;
+    
+                & > button:first-of-type {
+                    width: 25%;
+                    background: #F4F7FC;
+                    opacity: 1;
+                    outline: 0;
+                    border: none;
+                    border-radius: 22px;
+                    padding: 10px;
+                    text-align: center;
+                    font-weight: 600;
+                    font-size: 12px;
+                    font-family: $default-font;
+                    letter-spacing: 0.9px;
+                    color: #00243E;
+                    text-transform: uppercase;
+                    opacity: 1;
+                    margin-right: 10px;
+                }
+    
+                & > button:last-of-type {
+                    width: 25%;
+                    background: #EC312E;
+                    opacity: 1;
+                    outline: 0;
+                    border: none;
+                    border-radius: 22px;
+                    padding: 5px 20px;
+                    text-align: center;
+                    font-weight: 600;
+                    font-size: 12px;
+                    font-family: $default-font;
+                    letter-spacing: 0px;
+                    color: #FFFFFF;
+                    text-transform: uppercase;
+                    opacity: 1;
+                }
+            }
+        }
+    
+        & .profileMobileData {
+            display: none;
+        }
+    
+        & .profileImage {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 25px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 280px;
+            position: relative;
+    
+            & button {
+                position: absolute;
+                width: 40%;
+                bottom: -50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #00243E;
+                opacity: 1;
+                outline: 0;
+                border: none;
+                color: #ffffff;
+                border-radius: 22px;
+                padding: 10px;
+                text-align: left;
+                font-weight: 600;
+                font-size: 12px;
+                font-family: $default-font;
+                letter-spacing: 0px;
+                color: #FFFFFF;
+    
+                & img {
+                    height: 8px;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}

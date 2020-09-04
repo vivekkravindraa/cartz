@@ -1,0 +1,22 @@
+@media (min-width: 0px) and (max-width: 991px) {
+    .homeContainer {
+        background-color: '#F4F7FC';
+    }
+
+    .no-gutters::-webkit-scrollbar {
+        display: none;
+    }
+    
+    #fashionUpdateItem2 {
+        margin-top: 25px;
+        margin-bottom: -25px;
+    }
+      
+    #fashionUpdateItem3 {
+        margin-bottom: 25px;
+    }
+      
+    #fashionUpdateItem4 {
+        margin-top: 25px;
+    }
+}

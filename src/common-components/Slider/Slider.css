@@ -1,0 +1,39 @@
+@media (min-width: 0px) and (max-width: 991px) {
+    .sliderContainer {
+        margin: 0 10px;
+    }
+
+    .slider-wrapper {
+        border-radius: 10px;
+        background-color: #FFFFFF;   
+    }
+
+    .absoluteNavigation {
+        display: none;
+    }
+}
+
+.sliderContainer {
+    position: relative;
+}
+
+.absoluteNavigation {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    margin-left: -460px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 30px #00000029;
+    opacity: 1;
+    margin-top: 25px;
+    padding: 10px;
+}
+
+.carousel .slide img {
+    height: 41vw;
+    width: 100%;
+}
+
+.carousel .carousel-status {
+    display: none;
+}

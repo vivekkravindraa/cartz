@@ -1,0 +1,139 @@
+.footerTopContent {
+    display: grid;
+    grid-template-columns: repeat(2, 6fr);
+    background-image: url('../../assets/images/home-component-assets/footerBanner/footerBanner.png');
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    opacity: 1;
+    padding: 0 80px;
+    height: 550px;
+}
+
+.footerTitle {
+    text-align: left;
+    font-weight: 600;
+    font-size: 34px;
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
+}
+
+.footerSubTitle {
+    text-align: left;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: Roboto, sans-serif;
+    letter-spacing: 2.2px;
+    color: #ffffff;
+    opacity: 1;
+}
+
+.footerAppStores > img:first-child {
+    margin-right: 10px;
+}
+
+.footerBottomContent {
+    display: grid;
+    grid-template-columns: repeat(4, 3fr);
+    background: #020922 0% 0% no-repeat padding-box;
+    opacity: 1;
+    padding: 0 80px;
+}
+
+.footerContact {
+    position: relative;
+    top: -40px;
+    background: #ffffff;
+    border-bottom: 4px solid #f23f2d;
+    opacity: 1;
+    padding: 25px;
+    height: 200px;
+}
+
+.footerEmail,
+.footerPhone,
+.footerAddress {
+    display: flex;
+    align-items: center;
+}
+
+.footerEmail > img,
+.footerPhone > img,
+.footerAddress > img {
+    margin-right: 15px;
+}
+
+.footerEmail > p,
+.footerPhone > p,
+.footerAddress > p {
+    white-space: nowrap;
+}
+
+.footerContact > div > p {
+    text-align: left;
+    font-weight: 600;
+    font-size: 12px;
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0px;
+    color: #00243E;
+    opacity: 1;
+}
+
+.footerGetToKnowUs,
+.footerMyAccount,
+.footerHelp {
+    padding: 25px;
+}
+
+.footerGetToKnowUs > p,
+.footerMyAccount > p,
+.footerHelp > p {
+    text-align: left;
+    font-weight: 400;
+    font-size: 12px;
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
+}
+
+.footerEnd {
+    background: #020922 0% 0% no-repeat padding-box;
+    opacity: 1;
+    padding: 0 80px;
+}
+
+.footerDivider {
+    display: grid;
+    grid-template-columns: repeat(3, 4fr);
+    border-top: 1px solid #808080;
+}
+
+.footerSocialIcons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footerDivider > p,
+.footerCurrency > p {
+    text-align: left;
+    font-weight: 400;
+    font-size: 12px;
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
+}
+
+.footerCurrency {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footerCurrency > p {
+    margin-right: 10px;
+}
